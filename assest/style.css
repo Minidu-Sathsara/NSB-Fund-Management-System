@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logo {
+    height: 30px;
+    
+   
+}
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.language-select {
+    background: transparent;
+    color: white;
+    border: none;
+}
+.user-icon {
+    color: white;
+}
+.contact-btn {
+    background-color: #ffd700;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.hero {
+    background-image: url('/assest/images/Mask\ group.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding-left: 50px;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.rating {
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9em;
+}
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffd700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.footer {
+    background-color: #45474b;
+    color: #ffffff;
+    padding: 40px 0;
+}
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.footer-contact {
+    background-color: #ffc107;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-left: 60px; 
+}
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: Archivo;
+    color: #f4f4f4;
+}
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    font-family: RobotoFlex;
+    
+}
+.footer-section a:hover {
+    color:  #f5f7f8;
+}
+.footer-bottom {
+    border-top: 2px solid #f5f7f8;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+.footer-bottom p{
+    margin-left: 60px;
+}
+@media (max-width: 768px) {
+    .footer-contact {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSB Footer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .footer {
+            background-color: #45474b;
+            color: #ffffff;
+            padding: 40px 0;
+        }
+        .footer-logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .footer-contact {
+            background-color: #ffc107;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            float: left;
+        }
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-family: Archivo;
+            color: #f4f4f4;
+        }
+        .footer-section p, .footer-section a {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+            font-family: RobotoFlex;
+            
+        }
+        .footer-section a:hover {
+            color:  #f5f7f8;
+        }
+        .footer-bottom {
+            border-top: 1px solid #555555;
+            margin-top: 30px;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #999999;
+        }
+        @media (max-width: 768px) {
+            .footer-contact {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-content">
+                <!-- Logo Section -->
+                <div class="col-md-6 col-sm-12 text-center text-md-left footer-section">
+                    <div class="footer-logo">
+                        <img src="/assest/images/Group 42.png" alt="NSB Logo">
+                    </div>
+                </div>
+
+                <!-- Location and Contact Info -->
+                <div class="col-md-4 col-sm-12 footer-section">
+                    <h3>Location On</h3>
+                    <p>NSB Fund Management Co Ltd</p>
+                    <p>No.400, Galle Road, Colombo 03,</p>
+                    <p>Sri Lanka.</p>
+                    <h3>Telephone</h3>
+                    <p>+94 011 2425 010</p>
+                    <p>+94 011 2425 012</p>
+                    <h3>Fax</h3>
+                    <p>+94 011 2574 387</p>
+                    <h3>Email</h3>
+                    <p>nsbfmc@nsb.lk</p>
+                </div>
+
+                <!-- Company Links -->
+                <div class="col-md-2 col-sm-12 footer-section">
+                    <h3>Company</h3>
+                    <h3><a href="#">Home</a></h3>
+                    <h3><a href="#">Our Services</a></h3>
+                    <h3><a href="#">Customer Charter</a></h3>
+                    <h3><a href="#">Company Profile</a></h3>
+                    <h3><a href="#">Financial Statement</a></h3>
+                    <h3><a href="#">Right to Information Act</a></h3>
+                    <h3><a href="#">Download</h3>
+                    <h3><a href="#">FAQ</a></h3>
+                  
+                </div>
+            </div>
+
+            <!-- Contact Us Button  -->
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <button class="footer-contact">Contact Us ↗</button>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Text -->
+            <div class="row footer-bottom text-center text-md-left">
+                <div class="col-md-6 col-sm-12">
+                    <p>A Primary Dealer in Government Securities Appointed by the Central Bank of Sri Lanka</p>
+                </div>
+                <div class="col-md-6 col-sm-12 text-md-right">
+                    <p>We are Designers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+display: flex;
+flex-wrap: inherit;
+align-items: center;
+justify-content: space-between;
