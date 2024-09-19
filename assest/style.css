@@ -297,3 +297,184 @@ body {
         left: 0; /* Show the side menu */
     }
 }
+
+
+
+
+/*section 02*/
+ 
+
+.archivo {
+    font-family: "Archivo", sans-serif;
+  }
+  .roboto-flex {
+    font-family: "Roboto Flex", sans-serif;
+     
+  }
+
+
+  /* Investment Section */
+.investment-section {
+    background-color: #fff;
+    padding: 60px 0;
+    font-family: 'Archivo', sans-serif;
+}
+
+.section-intro {
+    color: #F5A623;
+    font-size: 20px;
+     margin-bottom: 20px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.text-center h1 {
+    font-family: "Archivo", sans-serif;
+    font-size: 40px;
+    color: #000;
+    font-weight: 300;
+    margin: 19px 111px 0 111px;
+    width: 1013px;
+    height: 115px;
+    object-fit: contain;
+}
+
+.section-description {
+    width: 530px;
+    height: 34px;
+    margin: 0 auto;
+    object-fit: contain;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-right: 420px;
+}
+
+/* Content Row */
+.content-row {
+    
+    object-fit: contain;
+    border-radius: 5px;
+    background-color: #f5f7f8;
+    padding: 40px;
+}
+
+/* Text Column */
+.text-column h2 {
+    width: 505px;
+    height: 149px;
+    margin: 32px 33px 33px 0;
+    object-fit: contain;
+    font-family: 'Archivo', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+.text-description {
+    width: 417px;
+    height: 90px;
+    margin: 33px 121px 43px 0;
+    object-fit: contain;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tab-buttons button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tab-buttons .active-tab {
+    background-color: #333;
+    color: #fff;
+}
+
+.tab-buttons button:hover {
+    background-color: #ddd;
+}
+
+/* Read More Button */
+.read-more-btn {
+    background-color: #FFC107;
+    width: 154px;
+    height: 50px;
+    border-radius: 5PX;
+    object-fit: contain;
+    border: none;
+}
+
+
+.read-more-btn:hover {
+    background-color: #e6a600;
+}
+
+/* Image Column */
+.image-column img {
+    width: 100%;
+    
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .text-column h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Section Title */
+.section-title {
+    font-size: 36px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    width: 530px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
