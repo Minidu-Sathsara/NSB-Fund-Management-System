@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color:#fff;
     box-sizing: border-box;
+    
 }
 
 .header {
@@ -55,8 +56,7 @@ body {
     border: none;
     cursor: pointer;
     float: left;
-    width: 154px;
-    height: 50px;
+   
 }
 .hero {
     background-image: url('/assest/images/Mask\ group.png');
@@ -77,6 +77,7 @@ body {
     margin-bottom: 20px;
     line-height: 1.2;
     font-family: "Archivo Narrow", sans-serif;
+    
 }
 .hero p {
     font-size: 1.2em;
@@ -84,6 +85,7 @@ body {
     line-height: 1.5;
     font-family: "Roboto Flex", sans-serif;
     max-width: 600px;
+   
 }
 .rating {
     background-color: rgba(255,255,255,0.2);
@@ -96,7 +98,7 @@ body {
    /* Responsive for tablets and smaller devices */
    @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     p {
@@ -111,7 +113,7 @@ body {
 /* Responsive for small devices (mobile phones) */
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.75rem !important;
     }
 
     p {
@@ -142,7 +144,7 @@ body {
 .footer-logo img {
     width: 100px;
     margin-bottom: 20px;
-    margin-left: 60px;
+    margin-left: 102px;
 }
 .footer-contact {
     background-color: #ffc107;
@@ -151,9 +153,8 @@ body {
     border: none;
     cursor: pointer;
     float: left;
-    width: 154px;
-    height: 50px;
-    margin-left: 60px;
+   
+    margin-left: 102px;
 }
      
 
@@ -175,17 +176,19 @@ body {
     color:  #f5f7f8;
 }
 .footer-bottom {
-    border-top: 2px solid #f5f7f8;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 10px;
+    padding-top: 30px;
     font-size: 12px;
     color: #999999;
 }
 .footer-bottom p{
     margin-left: 60px;
 }
+
+
+
 /* Footer Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
     .footer-content {
         display: flex;
         flex-direction: column;
@@ -197,11 +200,16 @@ body {
         margin-bottom: 20px;
     }
     .footer-logo img {
-       margin-right: 60px;
+       margin-right: 102px;
     }
     .footer-contact {
        margin-right: 60px;
     }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+   
 
 }
 
