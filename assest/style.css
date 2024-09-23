@@ -492,15 +492,17 @@ body {
     color: #666;
     margin-bottom: 20px;
 }
-.input-group {
+.input-group-fluid {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    border: 1px solid black; /* Black border added */
+    border-radius: 5px;
+    overflow: hidden;
 }
 .form-control {
    
-     border: 1px solid #ccc;
-     padding: 0 10px;
+    
 }
 .btn-submit {
 
@@ -744,6 +746,7 @@ body {
 .content-5 {
     text-align: center;
     padding: 20px;
+    
 }
 .header-5 {
     color: #ffc107;
@@ -864,4 +867,21 @@ body {
 }
 
  
- 
+  /* Show hover content on hover and hide pre-hover content */
+  .card:hover .pre-hover-content {
+    display: none !important;
+}
+
+.card:hover .hover-content {
+    display: flex !important;
+}
+
+/* Hide hover content initially */
+.hover-content {
+    display: none !important;
+}
+
+/* Adding a yellow background for Card 5 */
+.yellow-card {
+    background-color: #ffeb3b;
+}
