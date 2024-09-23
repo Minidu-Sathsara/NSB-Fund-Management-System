@@ -1,4 +1,4 @@
- body {
+body {
     margin: 0;
     padding: 0;
     background-color:#fff;
@@ -771,3 +771,97 @@
 .contact-btn-1:hover {
     background-color: #f8f9fa;
 }
+
+/*companyfrofile section 02*/
+
+
+
+.hero1{
+    background-image: url('/assest/images/bannerimage.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding-left: 50px;
+}
+/* People Section Styling */
+.person-card {
+    background-color: #fff;
+    
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+.person-card:hover {
+    transform: scale(1.05);
+    
+}
+.person-card img {
+  
+    width: 100%;
+    height: auto;
+}
+.person-info h4 {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.person-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Read More Button on Hover */
+.read-more-btn3 {
+    position: absolute;
+    bottom: 150px;   /* Adjust this to control the distance from the bottom */
+    right: 10px;    /* Adjust this to control the distance from the right */
+    padding: 8px 12px;
+    background-color: #ffcc00; /* You can choose a different color */
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    
+}
+
+.person-card:hover .read-more-btn3 {
+    bottom: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .person-card {
+        margin-bottom: 30px;
+    }
+}
+
+.company-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+ 
+ 
