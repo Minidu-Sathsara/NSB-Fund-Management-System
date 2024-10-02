@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSB Fund Management</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
      
-    <!-- Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assest/style.css">
 </head>
@@ -103,19 +103,19 @@
 <!-- navbar end -->
 
 <!-- Hero Section -->
-<div class="d-flex flex-column justify-content-center align-items-start text-white " style="background-image: url('/assest/images/bannerimage.png'); background-size: cover; background-position: center; height: 100vh;">
+
+  <div class="d-flex flex-column justify-content-center align-items-start text-white " style="background-image: url('/assest/images/Faq-banner-image.png'); background-size: cover; background-position: center; height: 100vh;">
     <div class="row w-100 m-0 px-5">
         <div class="col-md-12 px-5  ">
           <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 60px;">
-            Company Profile
+            FAQ
            </h1>
-           
             <p class="m-0 mt-5 "style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
-              Investing with NSB Fund Management means securing your financial future 
+              Investing with NSB Fund Management means securing your financial future
+              <br>
+              with trusted expertise and tailored strategies for growth and stability. 
             </p>
-            <p class="m-0  "style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
-              with trusted expertise and tailored strategies for growth and stability.
-            </p>
+           
             
             <button class="btn btn-secondary btn-light btn-lg rounded-pill mt-5 ">4.8 Stars , 1900+Reviews</button>
         </div>
@@ -123,143 +123,102 @@
 </div>
 <!-- Hero Section end-->
 
-<!--Company Profile  -->
-<!-- section 01 -->
-<div class="container text-center py-2 mt-5">
-    <!-- Small text for Company Profile -->
-    <p class="text-warning fs-6">Company Profile</p>
-    
-    <!-- Large Heading for NSB Fund Management -->
-    <h1 class="mt-2"style="font-family: 'Roboto Flex', sans-serif; font-size: 35px;">NSB Fund Management: Trusted financial solutions,<br>
-    expert investment guidance, secure future growth.</h1>
-    
-    <!-- Smaller paragraph text below the heading -->
-    <p class=" mt-2 " style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
-        Investing with NSB Fund Management means securing your financial future
-        <br> 
-        with trusted expertise and tailored strategies for growth and stability.
-    </p>
-</div>
-<!-- section 01 end -->
+<!--section 01--> 
+<section class="text-center py-5 bg-light">
+    <div class="container text-center  px-5">
+        <h1 class=" mt-5"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+            Find answers to common queries about
+            <br> 
+            NSB Fund Management services here.
+           </h1>
+           <p class="m-0 mt-2"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+            We address queries on account opening, investment options, Treasury Bills, fund performance, fees,
+            <br>
+            transaction processes, and service timelines for a smooth customer experience.
+            </p>
+       </div>
+   </section>
+<!--section 01 end--> 
 
-<!--Company Profile Cards -->
-<!-- section 02 -->
-<div class="container mt-5">
-    <div class="row">
-      <!-- Loop of 4 cards per row -->
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <div class="position-relative">
-            <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-            <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"   style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-          </div>
-          <div class="card-body ">
-            <h5 class="card-title">Mrs. Semini Perera</h5>
-            <p class="card-text">Board of Directors</p>
-          </div>
+<!-- section 02-->
+<section class="bg-light py-5">
+    <div class="container mt-5 px-0">
+        <!-- Accordion for FAQ section -->
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item bg-white border-0 mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What services does NSB Fund Management offer?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        NSB Fund Management provides a wide range of investment solutions, including Treasury Bills, Treasury Bonds, and portfolio management for individuals and institutions.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item bg-white border-0 mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I open an account with NSB Fund Management?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can open an account by contacting our customer service or visiting our website for online registration.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item bg-white border-0 mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What is the minimum investment amount for Treasury Bills?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The minimum investment amount is $1,000.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item bg-white border-0 mb-4">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How secure are my investments with NSB Fund Management?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Your investments are secure and managed by a team of experienced professionals in compliance with regulatory standards.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item bg-white border-0">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How do I check the status of my investments?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can check the status of your investments through our online portal or by contacting our customer support.
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-  
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <div class="position-relative">
-            <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-            <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"   style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-          </div>
-          <div class="card-body ">
-            <h5 class="card-title">Mr. John Doe</h5>
-            <p class="card-text">Chief Executive Officer</p>
-          </div>
+       <!-- Load More Button -->
+        <div class="text-center mt-4">
+            <a href="#" class="btn mb-3">
+                <img src="/assest/images/loade-more-button.png" alt="Image" style="width: 154px; height: 50px;">
+            </a>
         </div>
-      </div>
-  
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <div class="position-relative">
-            <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-            <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"   style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-          </div>
-          <div class="card-body ">
-            <h5 class="card-title">Ms. Jane Smith</h5>
-            <p class="card-text">Marketing Head</p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <div class="position-relative">
-            <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-            <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"   style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Mr. Alex Johnson</h5>
-            <p class="card-text">Finance Manager</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  
-<div class="container mt-5">
-      <div class="row">
-        <!-- Loop of 4 cards per row -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="position-relative">
-              <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-              <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"   style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-            </div>
-            <div class="card-body ">
-              <h5 class="card-title">Mrs. Semini Perera</h5>
-              <p class="card-text">Board of Directors</p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="position-relative">
-              <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-              <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"   style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-            </div>
-            <div class="card-body ">
-              <h5 class="card-title">Mr. John Doe</h5>
-              <p class="card-text">Chief Executive Officer</p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="position-relative">
-              <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-              <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"   style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-            </div>
-            <div class="card-body ">
-              <h5 class="card-title">Ms. Jane Smith</h5>
-              <p class="card-text">Marketing Head</p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <div class="position-relative">
-              <img src="/assest/images/people1.png" class="card-img-top" alt="Profile Picture">
-              <a href="#" class="btn btn-warning position-absolute end-0 bottom-0 mb-2 me-2 opacity-0"  style="opacity: 0; transition: opacity 0.3s;">Read More</a>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Mr. Alex Johnson</h5>
-              <p class="card-text">Finance Manager</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
- <!-- section 02 end -->
-
+    </section>
+<!-- section 02 end-->
 
 
 
@@ -331,19 +290,16 @@
         </div>
     </div>
   </footer>
-  
-  
-
-  <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      
+     
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <!-- Font Awesome for the play icon -->
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       
-      <!-- main JS -->
+  <!-- main JS -->
       <script src="/assest/main.js"></script>
       
-      <!-- Bootstrap JS -->
+  <!-- Bootstrap JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

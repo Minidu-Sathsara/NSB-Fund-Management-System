@@ -5,152 +5,11 @@ body {
     box-sizing: border-box;
     
 }
-
-.header {
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-   ;
-}
-.logo {
-    text-align: right;
-    
-   
-}
-
-.logo img {
-    height: 30px;
-    width: 79px;
-}
-
-.nav-items {
-    display: flex;
-    gap: 20px;
-}
-.nav-items a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-.right-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.language-select {
-    background: transparent;
-    color: white;
-    border: none;
-}
-.user-icon {
-    color: white;
-}
-.contact-btn {
-    background-color: #ffc107;
-    color: #000000;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    float: left;
-   
-}
-.hero {
-    background-image: url('/assest/images/Mask\ group.png');
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
-    padding-left: 50px;
-}
-.hero-content {
-   max-width: 1100px;
-   
-}
-.hero h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    font-family: "Archivo Narrow", sans-serif;
-    
-}
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-family: "Roboto Flex", sans-serif;
-    max-width: 600px;
-   
-}
-.rating {
-    background-color: rgba(255,255,255,0.2);
-    padding: 5px 10px;
-    border-radius: 20px;
-    display: inline-block;
-    font-size: 0.9em;
-}
-
-   /* Responsive for tablets and smaller devices */
-   @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem !important;
-    }
-
-    p {
-        font-size: 0.8rem !important;
-    }
-
-    .hero {
-        padding: 10px;
-        height: auto;
-    }
-    .hero-content {
-        max-width: 600px;
-    }
-}
-
-/* Responsive for small devices (mobile phones) */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem !important;
-        margin-top: 20px;
-    }
-
-    p {
-        font-size: 0.7rem !important;
-    }
-
-    .rating {
-        font-size: 1rem;
-    }
-}
-.dropdown-menu {
-    background-color: #fff;
-    padding: 0;
-}
-.dropdown-item {
-    color:black !important;
-}
-.dropdown-item:hover {
-    background-color:#fdb713;
-    color: #ffd700;
-}
-
+ /* footer */  
 .footer {
     background-color: #45474b;
     color: #ffffff;
-    padding: 40px 0;
-}
-.footer-logo img {
-    width: 100px;
-    margin-bottom: 20px;
-   
+    
 }
 .footer-contact {
     background-color: #ffc107;
@@ -161,8 +20,6 @@ body {
   
    
 }
-     
-
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -180,130 +37,11 @@ body {
 .footer-section a:hover {
     color:  #f5f7f8;
 }
-
-
-
-
-/* Footer Responsiveness */
-@media (max-width: 1350px) {
-    
-    .footer-section {
-        text-align: center;
-        margin-bottom: 20px;
-       
-       
-    }
-    .footer-logo img {
-      
-    }
-    .footer-contact {
-      
-    }
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-
-}
-
-@media (max-width: 576px) {
-    .footer-contact {
-       
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* Adjusting the row layout to be responsive */
-
-
-.col-md-6, .col-md-3, .col-md-2 {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-@media (max-width: 768px) {
-    .col-md-6, .col-md-3, .col-md-2 {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-/* Hide hamburger menu by default */
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #f4f4f4;
-    transition: transform 0.3s ease; /* Smooth transition */
-}
-.hamburger.active {
-    transform: rotate(90deg); /* Rotate icon when active */
-}
-
-/* Sidebar Menu */
-.side-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #343a40;
-    color: white;
-    padding-top: 60px;
-    transition: 0.3s;
-    z-index: 9999;
-}
-
-.side-menu a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.side-menu a:hover {
-    background-color: #495057;
-}
-
-/* Mobile Styles */
-@media (max-width: 1300px) {
-    .nav-items, .right-section {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .side-menu {
-        left: -250px; /* Hidden by default */
-    }
-
-    .side-menu.open {
-        left: 0; /* Show the side menu */
-    }
-}
-
-
-
- /*rid with no gutter */
-.row {
-  margin-left: 0;
-  margin-right: 0;
-  & > [class*='col-'] {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-
+ /* footer end */  
+ 
+ 
+ 
+ /* fonts */  
 .archivo {
     font-family: "Archivo", sans-serif;
   }
@@ -312,576 +50,201 @@ body {
      
   }
 
+/* fonts end*/ 
 
-  /* Investment Section */
-.investment-section {
-    background-color: #fff;
-    padding: 60px 0;
-    font-family: 'Archivo', sans-serif;
-}
 
-.section-intro {
-    color: #F5A623;
-    font-size: 20px;
-     margin-bottom: 20px;
-    font-family: "Roboto Flex", sans-serif;
-}
+/* company profile Hover effect directly on the image container */
 
-.text-center h1 {
-    font-family: "Archivo", sans-serif;
-    font-size: 40px;
-    color: #000;
-    font-weight: 300;
-    margin: 19px 111px 0 111px;
-    object-fit: contain;
-}
-
-.section-description {
-    margin: 0 auto;
-    object-fit: contain;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  
-}
-
-/* Content Row */
-.content-row {
-    
-    object-fit: contain;
-    border-radius: 5px;
-    background-color: #f5f7f8;
-    padding: 40px;
-}
-
-/* Text Column */
-.text-column h2 {
-    margin: 32px 33px 33px 0;
-    object-fit: contain;
-    font-family: 'Archivo', sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-
-.text-description {
-    margin: 33px 121px 43px 0;
-    object-fit: contain;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-
-/* Section Title */
-.section-title {
-    font-size: 36px;
-    font-weight: 300;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.section-subtitle {
-    font-size: 15px;
-    font-weight: 300;
-    color: #000;
-    width: 530px;
-    margin: 0 auto 40px;
-    text-align: center;
-}
-
-/* Toggle Button */
-.toggle-container {
-    background-color: #e9e9e9;
-    border-radius: 50px;
-    padding: 5px;
-    display: inline-flex;
-    
-    
+  .card:hover .btn {
+    opacity: 1 !important;
   }
-  .toggle-btn {
-    flex: 1;
+  .card{
     border: none;
-    padding: 10px 5px;
-    border-radius: 50px;
-    background-color: #f0f0f0;
-    color: #555;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
   }
-  .toggle-btn.active {
-    background-color:#333; /* Darker color for active state */
-    color: white;
-  }
-  .toggle-btn.inactive {
-    background-color: transparent;
-    color: #6f6862;
-  }
-
-/* Read More Button */
-.read-more-btn {
-    background-color: #FFC107;
-    width: 154px;
-    height: 50px;
-    border-radius: 5PX;
-    object-fit: contain;
-    border: none;
+  /* company profile Hover effect directly on the image container  end*/
+  /* swiper slider */
+  .new-3-hover-content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-
-.read-more-btn:hover {
-    background-color: #e6a600;
+/* On hover, hide the default content and show hover content */
+.new-3-card:hover .default-content {
+    opacity: 0;
 }
 
-/* Image Column */
-.image-column img {
-    width: 100%;
-    
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.new-3-card:hover .new-3-hover-content {
+    opacity: 1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content-row {
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .text-column h2 {
-        font-size: 1.5rem;
-    }
-}
-
-
-/* section 02 */
-.content {
-    text-align: center;
-    width: 100%;
-     
-    padding: 20px;
-    
-}
-
-.headline {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.subtext {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-.input-group-fluid {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    border: 1px solid black; /* Black border added */
-    border-radius: 5px;
+.new-3-card {
+    position: relative;
     overflow: hidden;
 }
-.form-control {
-   
-    
-}
-.btn-submit {
 
-    background-color: #ffc107;
-    color: #000;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    padding: 0 15px;
-    font-weight: bold;
-}
-.btn-submit:hover {
-    background-color: #ffca2c;
-}
-.error-message {
-    color: #dc3545;
-    font-size: 14px;
-    margin-top: 5px;
-    display: none;
-}
-
-
-/* section 04 */
-.section4{
-    background-color: #f8f9fa;
-}
-
-.video-container {
+.new-3-card-body {
     position: relative;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    margin-bottom: 20px;
 }
 
-.video-container iframe {
+/* Full width and reduced height for hover image */
+.new-3-hover-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Position the second button on the hover image */
+.new-3-hover-btn-on-image {
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Optional: Add opacity for the hover image to make the button more visible */
+.new-3-card-body.new-3-hover-content img {
+    opacity: 0.7;
+}
+
+/* Swiper specific styling */
+.swiper {
+    padding: 20px 0;
+}
+
+.swiper-slide {
+ display: flex;
+ justify-content: center;
+
+}
+
+  /* swiper slider end*/
+ 
+  /* Customer charter Cards Hover Effect */
+  .new-card-body .card-body-hover {
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.content-section {
-    padding: 40px 0;
-    text-align: left;
-}
-
-.content-section h2 {
-    width: 243px;
-    height: 34px;
-     
-    object-fit: contain;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fdb713;
-}
-
-.content-section p.lead {
-    object-fit: contain;
-    font-family: "Archivo", sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-
-.content-section p.description {
-    object-fit: contain;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-
-/* Style for the button icon */
-.play-button {
+    right: 0;
+    bottom: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: #f1a000;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    border-radius: 50%;
-    font-size: 24px;
+    transition: opacity 0.3s ease;
+  }
+
+  .new-card-body:hover .card-body-hover {
+    opacity: 1;
+  }
+
+  .new-card-body .original-content {
+    transition: opacity 0.3s ease;
+  }
+
+  .new-card-body:hover .original-content {
+    opacity: 0;
+  }
+
+
+  .new-1-card-body {
+    position: relative;
+    overflow: hidden;
+  }
+
+/* Customer charter Cards Hover Effect end */
+
+
+/* Anual Financial  Cards Hover Effect */ 
+  .new-1-card-body .card-body-hover {
+    opacity: 0;
     position: absolute;
-    bottom: -25px;
-    left: 15px;
-    cursor: pointer;
-}
-
-/* section 04 */
-.section-heading {
-  margin: 90px 59px 0 234px;
-  object-fit: contain;
-    font-family: "Archivo", sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.main-heading {
-    
-    object-fit: contain;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    }
-    
-.description{
- 
-  margin: 17px 142px 65px 0;
-  object-fit: contain;
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-    }
-
-
-    .section-heading1{
- 
-  margin: 17px 54px 17px 0;
-  object-fit: contain;
-    font-family: 'Archivo', sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-    }
-.main-heading1{
-    width: 195px;
-  height: 34px;
-  margin: 54px 364px 17px 0;
-  object-fit: contain;
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-}
- 
-
-.portfolio-section {
-    background-color: white;
-    padding: 30px;
-  
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
- 
-.contact-btn_1 {
-    border: 1px solid #f1a000;
-    color: black;
-    background-color:#f5f7f8 ;
-    display: inline-flex;
-    align-items: center;
-
-    padding: 10px 20px;
-    cursor: pointer;
-     
-
-}
-.read-more-btn2 {
-    border: 1px solid #f1a000;
-    color: black;
-    background-color:white ;
-    display: inline-flex;
-    align-items: center;
-
-    padding: 10px 20px;
-    cursor: pointer;
-     
-}
-.read-more-btn2:hover {
-    background-color: #f1a000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-}
-
-.read-more-btn2 svg {
-    margin-left: 10px;
-}
-
-/* Section paddings */
-/* .section-padding {
-   padding: 80px 20px;
-}*/
-
-.text-center {
-    margin-bottom: 40px;
-}
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-    .portfolio-section {
-        display: flex;
-      
-    }
-
-    .portfolio-text {
-        padding-right: 30px;
-    }
-}
-/* section 00 */
-.content-5 {
-    text-align: center;
-    padding: 20px;
-    
-}
-.header-5 {
-    color: #ffc107;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-.title-5 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-.description-5 {
-    font-size: 14px;
-    color: #6c757d;
-    margin-bottom: 20px;
-}
-.contact-btn-1 {
-    background-color: white;
-    border: 1px solid #dee2e6;
-    color: black;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-}
-.contact-btn-1:hover {
-    background-color: #f8f9fa;
-}
-
-/*companyfrofile section 02*/
-
-
-
-.hero1{
-    background-image: url('/assest/images/bannerimage.png');
+    transition: opacity 0.3s ease;
     background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
-    padding-left: 50px;
-}
-/* People Section Styling */
-.person-card {
-    background-color: #fff;
-    
-    text-align: center;
-    padding: 15px;
-    transition: transform 0.3s;
-}
-.person-card:hover {
-    transform: scale(1.05);
-    
-}
-.person-card img {
-  
-    width: 100%;
+    background-position: center;
+  }
+
+  .new-1-card-body:hover .card-body-hover {
+    opacity: 1;
+  }
+
+  .new-1-card-body .original-content {
+    transition: opacity 0.3s ease;
+  }
+
+  .new-1-card-body:hover .original-content {
+    opacity: 0;
+  }
+
+  /* Setting background image on hover */
+  .new-1-card-body:hover .card-body-hover {
+    background-image: url('/assest/images/invesment-report-img.png'); /* Change this to the hover background image */
+   
+  }
+
+  /* Optional styling to ensure image fits */
+  .original-content img {
+    width: 100%; /* Ensure original image fits the card */
     height: auto;
-}
-.person-info h4 {
-    font-size: 1.25rem;
-    margin-top: 15px;
-    font-weight: 600;
-}
-.person-info p {
-    font-size: 1rem;
-    color: #666;
-}
+  }
+   /* Investment Cards Hover Effect  end*/ 
 
-/* Read More Button on Hover */
-.read-more-btn3 {
-    position: absolute;
-    bottom: 150px;   /* Adjust this to control the distance from the bottom */
-    right: 10px;    /* Adjust this to control the distance from the right */
-    padding: 8px 12px;
-    background-color: #ffcc00; /* You can choose a different color */
-    color: #000;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
-    
-}
 
-.person-card:hover .read-more-btn3 {
-    bottom: 150px;
-}
+     /* Hide the hover content initially */
+     .new-2-hover-content {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+  }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .person-card {
-        margin-bottom: 30px;
-    }
-}
+  /*Our service Cards Hover Effect */
+  .new-2-card:hover .default-content {
+      opacity: 0;
+  }
 
-.company-heading {
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.4;
-    margin-bottom: 30px;
-}
+  .new-2-card:hover .new-2-hover-content {
+      opacity: 1;
+  }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6;
-}
+  .new-2-card {
+      position: relative;
+      overflow: hidden;
+      border: none!important;
+  }
 
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  .new-2-card-body {
+      position: relative;
+  }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #000;
-    border-radius: 50%;
-}
 
- 
-  /* Show hover content on hover and hide pre-hover content */
-  .card:hover .pre-hover-content {
-    display: none !important;
-}
 
-.card:hover .hover-content {
-    display: flex !important;
-}
+  /* Full width and reduced height for hover image */
+  .new-2-hover-content img {
+      width: 100%; /* Full width of the card */
+      height: 200px; /* Reduced height for the hover image */
+      object-fit: cover; /* Maintain aspect ratio */
+  }
 
-/* Hide hover content initially */
-.hover-content {
-    display: none !important;
-}
+  /* Position the second button on the hover image */
+  .new-2-hover-btn-on-image {
+      position: absolute;
+      bottom: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+  }
 
-/* Adding a yellow background for Card 5 */
-.yellow-card {
-    background-color: #ffeb3b;
-}
+  /* Optional: Add opacity for the hover image to make the button more visible */
+  .new-2-card-body.new-2-hover-content img {
+      opacity: 0.7;
+  }

@@ -4,419 +4,782 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSB Fund Management</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+     
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/assest/style.css">
 </head>
 <body> 
-        
-    
-        <header class="header">
-            <div class="logo">
-                <a class="logo" href="#"><img src="/assest/images/Group 42.png" alt="NSB Logo"></a>
-            </div>
-                <nav class="nav-items">
-                <a href="#">Home</a>
-                <a href="#">Our Services</a>
-                <a href="#">Customer Charter</a>
-                <a href="#">Market Rate</a>
-                <a href="#">Company Profile</a>
-                <a href="#">Financial Statment</a>
-                <a href="#">Right to Information Act</a>
-                <a href="#">Download</a>
-                <div class="dropdown">
-                    <a class="" href="#" role="button" id="faqDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+
+  <!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0 start-0">
+    <div class="container-fluid py-3">
+      <a class="navbar-brand px-3" href="#">
+        <img src="/assest/images/Group 42.png" alt="NSB Logo" style="height: 25px;">
+     </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Customer Charter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Market Rate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Company Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Financial Statement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Right to Information Act</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Download</a>
+                </li>
+                <!-- FAQ Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         FAQ
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="faqDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">General Questions</a></li>
-                        <li><a class="dropdown-item" href="#">Account Related</a></li>
-                        <li><a class="dropdown-item" href="#">Investment Options</a></li>
-                        <li><a class="dropdown-item" href="#">Security Concerns</a></li>
+                        <li><a class="dropdown-item" href="#">Investment Queries</a></li>
+                        <li><a class="dropdown-item" href="#">Account Management</a></li>
                     </ul>
-                </div>
-            </nav>
-            <div class="right-section">
-                <select class="language-select">
-                    <option>EN</option>
-                </select>
-                <span class="user-icon">CMS</span>
-                <a href="https://example.com">
-                    <button type="button" class="contact-btn">Contact Us ↗</button>
-                </a>
-                </div>
-
-<!-- Hamburger menu for mobile -->
-    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-</header>
-
-<!-- Side Menu for Mobile -->
-<div class="side-menu" id="sideMenu">
-    
-    <a href="#">Home</a>
-    <a href="#">Our Services</a>
-    <a href="#">Customer Charter</a>
-    <a href="#">Market Rate</a>
-    <a href="#">Company Profile</a>
-    <a href="#">Financial Statement</a>
-    <a href="#">Right to Information Act</a>
-    <a href="#">Download</a>
-    <div class="dropdown">
-        <a class="" href="#" role="button" id="faqDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            FAQ
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="faqDropdown">
-            <li><a class="dropdown-item" href="#">General Questions</a></li>
-            <li><a class="dropdown-item" href="#">Account Related</a></li>
-            <li><a class="dropdown-item" href="#">Investment Options</a></li>
-            <li><a class="dropdown-item" href="#">Security Concerns</a></li>
-        </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">EN</a>
+          </li>
+                        <!--<li class="nav-item">
+                    <select class="language-select">
+                    <option value="en">EN</option>
+                      <option value="es">ES</option>
+                     <option value="fr">FR</option>
+                     Add more language options as needed -->
+        
+             
+           
+              <li class="nav-item">
+                  <a class="nav-link" href="#">CMS 
+                    <img src="/assest/images/user-line 1.svg" alt="CMS Icon" style="height: 20px;">
+                 </svg> 
+                  </a>
+                  </li>
+                  
+                
+                  <button class="btn btn-warning ms-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">Contact Us ↗</button>
+                
+            </ul>  
     </div>
-    <a href="https://example.com">
-                    <button type="button" class="contact-btn">Contact Us ↗</button>
-                </a>
-                </div>
-</div>    
-</header>
-
+    
+</nav>
+<!-- navbar end -->
 
 <!-- Hero Section -->
-<section>
-        <div class="hero">
-            <div class="hero-content mt-5 ">
-                <h1>Invest wisely, secure your future with NSB Fund Management's expertise.</h1>
-                <p>Investing with NSB Fund Management means securing your financial future with trusted expertise and tailored strategies for growth and stability.</p>
-                <div class="rating">4.8 Stars , 1900+Reviews</div>
-            </div>
-        </div>
-</section>
 
-<!-- Section 02 -->
+  <div class="d-flex flex-column justify-content-center align-items-start text-white " style="background-image: url('/assest/images/Mask\ group.png'); background-size: cover; background-position: center; height: 100vh;">
+    <div class="row w-100 m-0 px-5">
+        <div class="col-md-12 px-5  ">
+          <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 60px;">
+           Invest wisely, secure your future with
+           <br> 
+           NSB Fund Management's expertise.
+           </h1>
+            <p class="m-0 mt-5 "style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+              Investing with NSB Fund Management means securing your financial future
+              <br>
+              with trusted expertise and tailored strategies for growth and stability. 
+            </p>
+           
+            
+            <button class="btn btn-secondary btn-light btn-lg rounded-pill mt-5 ">4.8 Stars , 1900+Reviews</button>
+        </div>
+    </div>
+</div>
+<!-- Hero Section end-->
+
+<!-- Section 01 -->
 <section class="investment-section">
-    <div class="container ">
-        <!-- Heading Section -->
-        <div class="text-center">
-            <p class="section-intro">Who We Are</p>
-            <h1>Invest wisely, secure your future with NSB Fund Management's expertise.</h1>
-            <p class="section-description">Investing with NSB Fund Management means securing your financial future with trusted expertise and tailored strategies for growth and stability.</p>
-        </div>
-
-        <!-- Content Section -->
-        <div class="row align-items-center mt-5 content-row">
-            <!-- Left Side - Text Content -->
-            <div class="col-md-6 text-column">
-                <!-- Tabbed Content -->
-               <div class=" justify-content-center  " >
-                    <div class="toggle-container"
-                    >
-                      <button class="toggle-btn active" id="annualReportsBtn">Annual Reports</button>
-                      <button class="toggle-btn inactive" id="interimStatementsBtn">Interim Financial Statements</button>
-                    </div>
-                  </div>
-
-                <!-- Text Description -->
-                <h2>Financial statements reveal NSB Fund Management's fiscal health.</h2>
-                <p class="text-description">
-                    Creating a financial statement for NSB Fund Management involves presenting a clear and comprehensive overview of the company’s financial performance and position. Here’s a typical structure for a financial statement.
-                </p>
-
-                <!-- Button -->
-                <button class="read-more-btn">Read More ↗</button>
-            </div>
-
-            <!-- Right Side - Image -->
-            <div class="col-md-6 image-column">
-                <img src="assest/images/rightsideimage.png" alt="Financial Statement" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-  <!-- section 03 -->
-  <section>
-
-    <div class="container mt-5">
-        <!-- Video Section -->
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/example" title="Company Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-          <!-- Company Information Section (Left-Aligned) -->
-          <div class="row content-section">
-            <div class="col-md-6">
-                <h2>History of Our Company</h2>
-                <p class="lead">NSB Fund Management, established in 1990, began as a small boutique investment firm focused on providing personalized financial services.</p>
-                <p class="description">Over the years, it has grown into a leading fund management company, renowned for its expertise in portfolio management, innovative investment strategies, and commitment to client satisfaction. With a strong foundation built on trust and performance, NSB Fund Management continues to expand its offerings, adapting to market changes and leveraging opportunities for growth and stability in the financial sector.</p>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<!-- section 04 -->
-  
-<section class="section4">
-
-    <div class="container section-padding">
-        <!-- Section 1: Main Header -->
-        <div class="text-center mb-5">
-            <h1 class="section-heading">NSB Fund Management offers competitive market rates across diverse investment portfolios</h1>
-            <p class="main-heading">Savings account offering an annual percentage yield (APY) of 0.05%.</p>
-            <a href="https://example.com">
-                <button type="button" class="contact-btn_1">Market Rate ↗</button>
-            </a>
-            </div>
-    
-        <!-- Section 2: Portfolio Information -->
-        <div class="row mb-5 portfolio-section">
-            <div class="col-md-6 portfolio-text">
-                <h3 class="main-heading1">Our Portfolio</h3>
-                <h2 class="section-heading1">NSB Fund Management: Leading provider of bespoke financial solutions.</h2>
-                <p class="description">NSB Fund Management is a distinguished firm specializing in comprehensive investment management services. Established in 1990, we excel in delivering tailored financial strategies, portfolio management, and personalized client solutions. Our commitment lies in maximizing returns while mitigating risks, ensuring long-term financial success for our clients.</p>
-                <button class="read-more-btn2">Read More ↗</button>
-    
-            </div>
-            <div class="col-md-6">
-                <img src="assest/images/photofolio.png" alt="Portfolio Image" class="img-fluid">
-            </div>
-        </div>
-    
+  <div class="container ">
+ <!-- Who We Are-->
          
-    </div>
-     
-    </section>
-    <!-- Section 00 -->
-    <div class="content-5">
-        <div class="header-5">Right To Information Act</div>
-        <h1 class="title-5">NSB Fund Management adheres to regulations under Right to Information.</h1>
-        <p class="descriptio-5">NSB Fund Management adheres to the principles of transparency and accountability under the Right to Information Act, ensuring access to information and promoting public trust through ethical practices.</p>
-        <a href="https://example.com">
-            <button type="button" class="contact-btn-1">Market Rate ↗</button>
-        </a>
-    </div>
+ <section class="text-center py-5 ">
+  <div class="container text-center  px-5">
+                 <div class="text-warning ">Who We Are</div>
+                 <h1 class="m-0 mt-3"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+                  Invest wisely, secure your future with NSB Fund
+                  <br>
+                  Management's expertise.
+                 </h1>
+                 <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                  Investing with NSB Fund Management means securing your financial future
+                  <br>
+                  with trusted expertise and tailored strategies for growth and stability.
+                </p>
+              </section>
 
-    <!-- Section 06 -->
-    <div class="container my-5">
-        <div class="row">
-            <!-- Start of the card loop -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm" style="width: 370px; height: 380px;">
-                    <img src="/assest/images/mask-group.png" class="card-img-top" alt="Investment">
+                
+<!-- Annual Reports-->
+    <!-- Content Section -->
+    <div class="container mt-5 bg-light rounded shadow-sm">
+      <!-- Button group for reports -->
+      <div class="col-md-6">
+       <ul class="nav nav-pills mt-4" id="pills-tab" role="tablist">
+          <li class="nav-item rounded-pill" role="presentation"style="background-color: #e9e9e9; ">
+              <button class="nav-link active  rounded-pill me-2 px-4 py-2" id="pills-annual-tab" data-bs-toggle="pill" data-bs-target="#pills-annual" type="button" role="tab" aria-controls="pills-annual" aria-selected="true"style=" background-color: #333; color: #fff;">Annual Reports</button>
+          </li>
+          <li class="nav-item rounded-pill" role="presentation"style="background-color: #e9e9e9; ">
+              <button class="nav-link inactive  rounded-pill px-4 py-2" id="pills-interim-tab" data-bs-toggle="pill" data-bs-target="#pills-interim" type="button" role="tab" aria-controls="pills-interim" aria-selected="false"style="  color: #fff;">Interim Financial Statements</button>
+          </li>
+      </ul>
+      </div>
 
-                    <!-- Content overlaying the image -->
-                    <div class="card-img-overlay">
-                        <!-- Pre-hover content (visible by default) -->
-                        <div class="pre-hover-content">
-                            <h5 class="card-title text-white">Investment Insights</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-light">
-                                    <div class="explore-button-text">Explore</div>
-                                </a>
-                            </div>
-                        </div>
+      <!-- Tab content (Main section changes here) -->
+      <div class="tab-content" id="pills-tabContent">
+          <!-- Annual Reports Tab Pane -->
+          <div class="tab-pane fade show active" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
+              <div class="row align-items-center">
+                  <div class="col-md-6 p-5 mb-4">
+                      <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">Financial statements reveal 
+                        <br>
+                        NSB Fund Management's 
+                        <br>
+                        fiscal health.
+                      </h1>
+                      <p class="text-muted mt-4"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                        Creating a financial statement for NSB Fund Management 
+                        <br>
+                        involves presenting a clear and comprehensive overview of 
+                        <br>
+                        the company's financial performance and position. Here’s a
+                        <br>
+                         typical structure for a financial statement
+                      </p>
+                      <a  class="btn btn-warning mt-4" href="#" >Read More ↗ </a>
+                  </div>
+                  <div class="col-md-6">
+                      <img src="/assest/images/anual report img.png" class="img-fluid rounded-end mb-5" alt="Annual Report">
+                  </div>
+              </div>
+          </div>
 
-                        <!-- Hover content (hidden by default) -->
-                        <div class="hover-content">
-                            <h5 class="card-title text-white">Investment performance reports</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-warning">
-                                    <div class="hover-button-text">Read More <i class="bi bi-arrow-right"></i></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <!-- Interim Financial Statements Tab Pane -->
+          <div class="tab-pane fade" id="pills-interim" role="tabpanel" aria-labelledby="pills-interim-tab">
+            <div class="row align-items-center">
+              <div class="col-md-6 p-5 mb-4">
+                  <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">Financial statements reveal 
+                    <br>
+                    NSB Fund Management's 
+                    <br>
+                    fiscal health.
+                  </h1>
+                  <p class="text-muted mt-4"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                    Creating a financial statement for NSB Fund Management 
+                    <br>
+                    involves presenting a clear and comprehensive overview of 
+                    <br>
+                    the company's financial performance and position. Here’s a
+                    <br>
+                     typical structure for a financial statement
+                  </p>
+                  <a  class="btn btn-warning mt-4" href="#" >Read More ↗ </a>
+              </div>
+              <div class="col-md-6">
+                  <img src="/assest/images/anual report img.png" class="img-fluid rounded-end mb-5" alt="Annual Report">
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
 
-            <!-- Repeat for other cards -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm" style="width: 370px; height: 380px;">
-                    <img src="/assest/images/mask-group.png" class="card-img-top" alt="Investment">
-
-                    <!-- Content overlaying the image -->
-                    <div class="card-img-overlay">
-                        <!-- Pre-hover content (visible by default) -->
-                        <div class="pre-hover-content">
-                            <h5 class="card-title text-white">Investment Insights</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-light">
-                                    <div class="explore-button-text">Explore</div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Hover content (hidden by default) -->
-                        <div class="hover-content">
-                            <h5 class="card-title text-white">Investment performance reports</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-warning">
-                                    <div class="hover-button-text">Read More <i class="bi bi-arrow-right"></i></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm" style="width: 370px; height: 380px;">
-                    <img src="/assest/images/mask-group.png" class="card-img-top" alt="Investment">
-
-                    <!-- Content overlaying the image -->
-                    <div class="card-img-overlay">
-                        <!-- Pre-hover content (visible by default) -->
-                        <div class="pre-hover-content">
-                            <h5 class="card-title text-white">Investment Insights</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-light">
-                                    <div class="explore-button-text">Explore</div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Hover content (hidden by default) -->
-                        <div class="hover-content">
-                            <h5 class="card-title text-white">Investment performance reports</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-warning">
-                                    <div class="hover-button-text">Read More <i class="bi bi-arrow-right"></i></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second row starts here -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm" style="width: 370px; height: 380px;">
-                    <img src="/assest/images/mask-group.png" class="card-img-top" alt="Investment">
-
-                    <!-- Content overlaying the image -->
-                    <div class="card-img-overlay">
-                        <!-- Pre-hover content (visible by default) -->
-                        <div class="pre-hover-content">
-                            <h5 class="card-title text-white">Investment Insights</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-light">
-                                    <div class="explore-button-text">Explore</div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Hover content (hidden by default) -->
-                        <div class="hover-content">
-                            <h5 class="card-title text-white">Investment performance reports</h5>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-warning">
-                                    <div class="hover-button-text">Read More <i class="bi bi-arrow-right"></i></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 (Yellow Highlighted) -->
-            <div class="col-md-8">
-                <div class="card yellow-card" style="width: 810px; height: 380px;">
-                    <div class="card-body">
-                        <h4 class="card-title">Investment rate for a bank could be a savings account offering an annual percentage yield (APY) of 0.50%.</h4>
-                        <p>The investment rate, indicating the percentage return on an investment, soared to an impressive 12% this quarter. As they say, "Success takes off when preparation meets opportunity."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-<!-- Section 00 -->
-<section>
-    <div class="content mb-5 ">
-        <h1 class="headline ">Time is money. Save both.</h1>
-        <p class="mt-4 subtext">Discover tailored solutions for your financial goals. Complete the form below to learn more about our comprehensive fund management services. Let's build your future together.</p>
-        <div class="d-flex input-group-fluid justify-content-center mt-5"style="width: 730px;height: 40px;">
-            <input type="email" id="email-input" class="form-control"style="" placeholder="Enter Your Work Email" aria-label="Work Email">
-            <button class="btn btn-submit" type="button" onclick="validateEmail()">Submit <span>&rarr;</span></button>
-        </div>
-        <div id="error-message" class="error-message">Please enter a valid email address.</div>
-    </div>
 </section>
+<!-- Section 01 end-->
+
+<!-- section 02 -->
+ <!-- Our Services -->
+  <section class="text-center py-5 bg-light">
+    <div class="container text-center  px-5">
+           <div class="text-warning ">Our Services</div>
+           <h1 class="m-0 mt-3"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+            Expert fund management ensuring
+            <br> 
+            growth and security
+           </h1>
+         
+          <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+            NSB Fund Management offers expert investment strategies, personalized financial
+            <br>
+            planning and portfolio management
+            to maximize returns while minimizing risks. Trust 
+            <br>
+            our dedicated team for comprehensive and tailored fund management solutions. 
+          </p>
+       </div>
+   </section>
+ 
+<!-- section 02 end -->
+ 
+ <!-- section 03 -->
+   <!-- Swiper -->
+ <!-- Swiper Container -->
+ <section class="  bg-light d-flex justify-content-end py-3">
+  <div class="container my-4 m-0 p-0 ">
+      <div class="swiper">
+          <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                      <!-- Default content -->
+                      <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
+                          <div>
+                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
+                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          </div>
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
+                      </div>
+  
+                      <!-- Hover content -->
+                      <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
+                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
+                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <!-- First Button -->
+                          <button class="btn mb-2">Read More ↗</button>
+                          <!-- Second Button: Positioned on hover image -->
+                          <button class="btn btn-light btn-lg rounded-pill new-3-hover-btn-on-image" style="width: 300px; height: 40px; font-size: 15px">issued with fixed tenors of 3 months</button>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                      <!-- Default content -->
+                      <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
+                          <div>
+                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
+                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          </div>
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
+                      </div>
+  
+                      <!-- Hover content -->
+                      <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
+                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
+                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <!-- First Button -->
+                          <button class="btn mb-2">Read More ↗</button>
+                          <!-- Second Button: Positioned on hover image -->
+                          <button class="btn btn-light btn-lg rounded-pill new-3-hover-btn-on-image" style="width: 300px; height: 40px; font-size: 15px">issued with fixed tenors of 3 months</button>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Card 3 -->
+              <div class="swiper-slide">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                      <!-- Default content -->
+                      <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
+                          <div>
+                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
+                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          </div>
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
+                      </div>
+  
+                      <!-- Hover content -->
+                      <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
+                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
+                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <!-- First Button -->
+                          <button class="btn mb-2">Read More ↗</button>
+                          <!-- Second Button: Positioned on hover image -->
+                          <button class="btn btn-light btn-lg rounded-pill new-3-hover-btn-on-image" style="width: 300px; height: 40px; font-size: 15px">issued with fixed tenors of 3 months</button>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Card 4 -->
+              <div class="swiper-slide">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                      <!-- Default content -->
+                      <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
+                          <div>
+                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
+                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          </div>
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
+                      </div>
+  
+                      <!-- Hover content -->
+                      <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
+                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
+                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <!-- First Button -->
+                          <button class="btn mb-2">Read More ↗</button>
+                          <!-- Second Button: Positioned on hover image -->
+                          <button class="btn btn-light btn-lg rounded-pill new-3-hover-btn-on-image" style="width: 300px; height: 40px; font-size: 15px">issued with fixed tenors of 3 months</button>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Card 5 -->
+              <div class="swiper-slide">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                      <!-- Default content -->
+                      <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
+                          <div>
+                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
+                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          </div>
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
+                      </div>
+  
+                      <!-- Hover content -->
+                      <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
+                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
+                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <!-- First Button -->
+                          <button class="btn mb-2">Read More ↗</button>
+                          <!-- Second Button: Positioned on hover image -->
+                          <button class="btn btn-light btn-lg rounded-pill new-3-hover-btn-on-image" style="width: 300px; height: 40px; font-size: 15px">issued with fixed tenors of 3 months</button>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Card 6 -->
+              <div class="swiper-slide">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                      <!-- Default content -->
+                      <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
+                          <div>
+                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
+                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          </div>
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
+                      </div>
+  
+                      <!-- Hover content -->
+                      <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
+                          <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
+                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
+                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <!-- First Button -->
+                          <button class="btn mb-2">Read More ↗</button>
+                          <!-- Second Button: Positioned on hover image -->
+                          <button class="btn btn-light btn-lg rounded-pill new-3-hover-btn-on-image" style="width: 300px; height: 40px; font-size: 15px">issued with fixed tenors of 3 months</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+         <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+  </div>
+  </section>
+  <!-- section 03 end-->
+ 
+  <!-- section 04 -->
+  <!--Our Mission -->
+   <section class="bg-light py-5">
+   <div class="container text-center ">
+          <div class="text-warning ">Our Mission</div>
+          <h1 class="m-0 mt-3"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+            The mission of NSB Fund Management is to deliver superior financial 
+            <br>
+            outcomes through innovative investment strategies, personalized
+            <br>
+            client service, and a commitment to integrity and excellence in fund 
+            <br>
+            management
+          </h1>
+        </div>
+   </section>
+
+<!--History of Our Company -->
+<section class="py-3">
+  <div class="container mt-5">
+      <!-- Row for video and content -->
+      <div class="row position-relative">
+          <!-- Video Section -->
+          <div class="col-12">
+              <!-- Image placeholder for the video -->
+              <div class="position-relative">
+                  <img src="/assest/images/vedio.png" alt="Video Thumbnail" class="w-100" id="video-placeholder">
+                  <!-- Play button over the image -->
+                  <button class="btn   position-absolute top-50 start-50 translate-middle" id="play-button">
+                    <img src="/assest/images/play button.png" alt="Play" style="width: 70px; height: 70px;">
+                  </button>
+                  
+              </div>
+
+              <!-- Video (Initially hidden) -->
+              <video controls class="w-100 d-none" id="video-element">
+                  <source src="your_video_url_here.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Row for Title and Description -->
+<section class="px-5 py-5">
+        <div class="container">
+        <!-- Text Section -->
+            <div class="col-12 ">
+                <h6 class="text-warning mb-2 py-4">History of Our Company</h6>
+                <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+                  NSB Fund Management, established in 1990, began as a small
+                  <br>
+                  boutique investment firm focused on providing personalized
+                  <br>
+                  financial services.
+                 </h1>
+                  <p class="m-0 mt-5"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                    Over the years, it has grown into a leading fund management company, renowned for its expertise in portfolio
+                    <br>
+                    management, innovative investment strategies, and commitment to client satisfaction. With a strong foundation
+                    <br>
+                    built on trust and performance, NSB Fund Management continues to expand its offerings, adapting to market
+                    <br>
+                    changes and leveraging opportunities for growth and stability in the financial sector.
+                  </p> 
+            </div>
+        </div>
+   </section>
+<!-- section 04 end-->
+
+<!-- section 05 -->
+<!--market rates -->
+ <section class="text-center py-5 bg-light">
+    <div class="container">
+    </h1>
+    <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+      NSB Fund Management offers competitive market rates
+      <br>
+      across diverse investment portfolios
+    </h1>
+  <p class="mt-2"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">Savings account offering an annual percentage yield (APY) of 0.50%.</p>
+      <a href="#" class="mt-3 btn btn-outline-warning">Market Rate ↗</a>
+    </div>
+  </section>
+
+<!-- Portfolio Information with white background -->
+  <section class="py-3 bg-light">
+    <div class="container">
+      <div class="bg-white  shadow-sm">
+        <div class="row ">
+          <div class=" col-6 px-5">
+           <div class="mb-0 mt-5 ">Our Portfolio</div>
+           <h1 class=" mt-5"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+            NSB Fund Management:
+            <br> 
+            Leading provider of bespoke
+            <br>
+            financial solutions
+           </h1>
+         
+          <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+            NSB Fund Management is a distinguished firm specializing
+            <br>
+            in comprehensive investment management services.
+            <br>
+            Established in 1990, we excel in delivering tailored financial
+            <br>
+            strategies, portfolio management, and personalized client 
+            <br>
+            solutions.Our commitment lies in maximizing returns while
+            <br>
+            mitigating risks, ensuring long-term financial success for
+            <br>
+            our clients.
+          </p>
+          <a href="#" class="btn btn-outline-warning mt-5">Read More &rarr;</a>
+        </div>
+          <div class="col-md-6 ">
+            <img src="assest/images/photofolio.png" alt="Team discussion" class="w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--  Right to Information Act -->
+<section class="bg-light py-5">
+  <div class="container text-center ">
+         <div class="text-warning mb-4 "> Right To Information Act</div>
+      <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+        NSB Fund Management adheres to
+        <br>
+        regulations under Right to Information.
+       </h1>
+       <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+        NSB Fund Management adheres to the principles of transparency and accountability
+        <br>
+        under the Right to Information Act, ensuring access to information and promoting public
+        <br>
+        trust through ethical practices
+      </p>
+    <a href="#" class="btn btn-outline-warning mt-5">Read More ↗</a>
+    </div>
+  </section>
+<!-- section 05 end-->
+
+
+<!-- Section 06 -->
+ <section class="py-5">
+  <div class="container mt-5">
+
+    <!-- First Row -->
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+
+            <!-- Original Content -->
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+              <br>English</h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+            <!-- Hover Content -->
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+                  <br>English</h2>
+                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
+                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+
+            <!-- Original Content -->
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+              <br>English</h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+            <!-- Hover Content -->
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+                  <br>English</h2>
+                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
+                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+
+            <!-- Original Content -->
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+              <br>English</h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+            <!-- Hover Content -->
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+                  <br>English</h2>
+                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
+                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row row-cols-3 row-cols-md-3 g-5 mt-2">
+      <div class="col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+
+            <!-- Original Content -->
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+              <br>English</h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+            <!-- Hover Content -->
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
+                  <br>English</h2>
+                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
+                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="custom-card bg-warning position-relative " style="height: 23.5rem;">
+          <div class="px-5">
+            <h2 class="py-5 px-4" style="font-family: 'Archivo', sans-serif;font-size: 40px;">
+              Investment rate for a bank could be a <br>
+              savings account offering an annual <br>
+              percentage yield (APY) of 0.50%.
+            </h2>
+            <p class="px-4 mb-5" style="font-family: 'Roboto Flex', sans-serif;font-size: 16px;">
+              The investment rate, indicating the percentage return on an investment, soared to an
+              <br>
+              impressive 12% this quarter. As they say, "Success takes off when preparation meets
+              <br>
+              opportunity."
+            </p>
+          </div>
+       </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+ <!-- Section 06 end--> 
 
 
  <!-- FOOTER Section -->
-
- <footer class="footer ">
-    <div class="container">
-        <div class="row footer-content mt-4 justify-content-between">
-            <!-- Logo Section -->
-            <div class="align-content-between col-lg-5 d-grid footer-section">
-                <div class="footer-logo">
-                    <img src="/assest/images/Group 42.png" alt="NSB Logo">
-                </div>
-                <div class="col-md-10">
-                    <a href="https://example.com">
-                    <button type="button" class="footer-contact">Contact Us ↗</button>
-                  </a>
-               </div>
+<footer class="footer" style="background-color: #45474b; color: #fff;">
+  <div class="container py-5">
+      <div class="row footer-content mt-4 justify-content-between">
+          <!-- Logo Section -->
+          <div class="align-content-between col-lg-5 d-grid footer-section">
+            <div class="footer-logo">
+              <img src="/assest/images/Group 42.png" alt="NSB Logo" style="height: 40px;">
             </div>
-            <div class="row col-lg-6">
-            <!-- Location and Contact Info -->
-                <div class="col-lg-7 footer-section">
-                    <h3>Location On</h3>
-                    <p>NSB Fund Management Co Ltd</p>
-                    <p>No.400, Galle Road, Colombo 03,</p>
-                    <p>Sri Lanka.</p>
-                    <h3>Telephone</h3>
-                    <p>+94 011 2425 010</p>
-                    <p>+94 011 2425 012</p>
-                    <h3>Fax</h3>
-                    <p>+94 011 2574 387</p>
-                    <h3>Email</h3>
-                    <p>nsbfmc@nsb.lk</p>
-                </div>
-
-                <!-- Company Links -->
-                <div class="col-lg-3 footer-section">
-                    <h3>Company</h3>
-                    <h3><a href="#">Home</a></h3>
-                    <h3><a href="#">Our Services</a></h3>
-                    <h3><a href="#">Customer Charter</a></h3>
-                    <h3><a href="#">Company Profile</a></h3>
-                    <h3><a href="#">Financial Statement</a></h3>
-                    <h3><a href="#">Right to Information Act</a></h3>
-                    <h3><a href="#">Download</a></h3><a href="#">
-                    </a><h3><a href="#"></a><a href="#">FAQ</a></h3>
+            <div class="col-md-10">
+                <a href="https://example.com">
+                <button type="button" class="footer-contact">Contact Us ↗</button>
+           
                 
-                </div>
-            </div>
-    </div>
-</div>
-<!-- Footer Bottom Line -->
+              </a>
+              </div>
+          </div>
 
-<hr class="mt-3 mb-1 mx-auto " style="max-width: 1300px;">
+          <!-- Location and Contact Info + Company Links -->
+          <div class="col-lg-6 col-md-12 row">
+              <!-- Location and Contact Info -->
+              <div class="col-lg-6 col-md-6 col-12 footer-section mb-4">
+                  <h3 class="mb-4">Location On</h3>
+                  <p>NSB Fund Management Co Ltd</p>
+                  <p>No.400, Galle Road, Colombo 03,</p>
+                  <p class="mb-4">Sri Lanka.</p>
 
-<!-- Footer Bottom Text -->
-        <div class=" row footer-bottom ">
-            <div class=" col-md-10 col-sm-12 " >
-                <p>A Primary Dealer in Government Securities Appointed by the Central Bank of Sri Lanka</p>
-            </div>
-            <div class=" col-md-2  col-sm-12 " >
-                <p>We are Designers</p>
-            </div>
-        </div>
-    
+                  <h3 class="mb-4">Telephone</h3>
+                  <p>+94 011 2425 010</p>
+                  <p class="mb-4">+94 011 2425 012</p>
+
+                  <h3 class="mb-4">Fax</h3>
+                  <p class="mb-4">+94 011 2574 387</p>
+
+                  <h3>Email</h3>
+                  <p>nsbfmc@nsb.lk</p>
+              </div>
+
+              <!-- Company Links -->
+              <div class="col-lg-6 col-md-6 col-12 footer-section px-lg-5">
+                  <h3 class="mb-4">Company</h3>
+                  <h3><a href="#">Home</a></h3>
+                  <h3><a href="#">Our Services</a></h3>
+                  <h3><a href="#">Customer Charter</a></h3>
+                  <h3><a href="#">Company Profile</a></h3>
+                  <h3><a href="#">Financial Statement</a></h3>
+                  <h3><a href="#">Right to Information Act</a></h3>
+                  <h3><a href="#">Download</a></h3>
+                  <h3><a href="#">FAQ</a></h3>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer Bottom Line -->
+  <div class="row footer-bottom align-items-center m-0 p-3">
+      <hr class="col-12">
+
+      <div class="col-md-10 col-12 text-center text-md-start">
+          <p>A Primary Dealer in Government Securities Appointed by the Central Bank of Sri Lanka</p>
+      </div>
+      <div class="col-md-2 col-12 text-center text-md-end">
+          <p>We are Designers</p>
+      </div>
+  </div>
 </footer>
-
+   
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Font Awesome for the play icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+<!-- main JS -->
     <script src="/assest/main.js"></script>
+    
+<!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>

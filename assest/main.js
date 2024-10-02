@@ -1,34 +1,47 @@
-function toggleMenu() {
-  const sideMenu = document.getElementById('sideMenu');
-  sideMenu.classList.toggle('open');
-}
-
-// JavaScript to toggle the active class
-document.getElementById('annualReportsBtn').addEventListener('click', function () {
-  this.classList.add('active');
-  this.classList.remove('inactive');
-  document.getElementById('interimStatementsBtn').classList.remove('active');
-  document.getElementById('interimStatementsBtn').classList.add('inactive');
+ // swiper slider
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+  spaceBetween: 5,
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+      320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+      },
+      768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+      },
+      1024: {
+          slidesPerView: 3.3,
+          spaceBetween: 30,
+      },
+  },
 });
 
-document.getElementById('interimStatementsBtn').addEventListener('click', function () {
-  this.classList.add('active');
-  this.classList.remove('inactive');
-  document.getElementById('annualReportsBtn').classList.remove('active');
-  document.getElementById('annualReportsBtn').classList.add('inactive');
-});
+ // video player
+ const playButton = document.getElementById('play-button');
+ const videoPlaceholder = document.getElementById('video-placeholder');
+ const videoElement = document.getElementById('video-element');
 
-// submission logic
-function validateEmail() {
-  const emailInput = document.getElementById('email-input');
-  const errorMessage = document.getElementById('error-message');
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ // Add click event listener on play button
+ playButton.addEventListener('click', function() {
+     // Hide the image placeholder and play button
+     videoPlaceholder.classList.add('d-none');
+     playButton.classList.add('d-none');
+     
+     // Show and play the video
+     videoElement.classList.remove('d-none');
+     videoElement.play();
+ });
 
-  if (emailRegex.test(emailInput.value)) {
-      errorMessage.style.display = 'none';
-      alert('Email submitted successfully!');
-      // You can add your form submission logic here
-  } else {
-      errorMessage.style.display = 'block';
-  }
-}
+
+  
