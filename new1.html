@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Statement</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 bg-light rounded shadow-sm">
+        <!-- Button group for reports -->
+        <div class="col-md-6">
+         <ul class="nav nav-pills mt-4" id="pills-tab" role="tablist">
+            <li class="nav-item rounded-pill" role="presentation"style="background-color: #e9e9e9; ">
+                <button class="nav-link active  rounded-pill me-2 px-4 py-2" id="pills-annual-tab" data-bs-toggle="pill" data-bs-target="#pills-annual" type="button" role="tab" aria-controls="pills-annual" aria-selected="true"style=" background-color: #333; color: #fff;">Annual Reports</button>
+            </li>
+            <li class="nav-item rounded-pill" role="presentation"style="background-color: #e9e9e9; ">
+                <button class="nav-link inactive  rounded-pill px-4 py-2" id="pills-interim-tab" data-bs-toggle="pill" data-bs-target="#pills-interim" type="button" role="tab" aria-controls="pills-interim" aria-selected="false"style="  color: #fff;">Interim Financial Statements</button>
+            </li>
+        </ul>
+        </div>
+
+        <!-- Tab content (Main section changes here) -->
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Annual Reports Tab Pane -->
+            <div class="tab-pane fade show active" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6 p-5 mb-4">
+                        <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">Financial statements reveal 
+                          <br>
+                          NSB Fund Management's 
+                          <br>
+                          fiscal health.
+                        </h1>
+                        <p class="text-muted mt-4"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                          Creating a financial statement for NSB Fund Management 
+                          <br>
+                          involves presenting a clear and comprehensive overview of 
+                          <br>
+                          the company's financial performance and position. Here’s a
+                          <br>
+                           typical structure for a financial statement
+                        </p>
+                        <a  class="btn btn-warning mt-4" href="#" >Read More ↗ </a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assest/images/anual report img.png" class="img-fluid rounded-end mb-5" alt="Annual Report">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interim Financial Statements Tab Pane -->
+            <div class="tab-pane fade" id="pills-interim" role="tabpanel" aria-labelledby="pills-interim-tab">
+                <div class="row align-items-center">
+                  <div class="col-md-6 p-4">
+                    <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">Financial statements reveal 
+                      <br>
+                      NSB Fund Management's 
+                      <br>
+                      fiscal health.
+                    </h1>
+                    <p class="text-muted"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                      Creating a financial statement for NSB Fund Management 
+                      <br>
+                      involves presenting a clear and comprehensive overview of 
+                      <br>
+                      the company's financial performance and position. Here’s a
+                      <br>
+                       typical structure for a financial statement
+                    </p>
+                    <a href="#" class="btn btn-warning">Read More ↗ </a>
+                </div>
+                <div class="col-md-6">
+                    <img src="/assest/images/anual report img.png" class="img-fluid rounded-end" alt="Annual Report">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

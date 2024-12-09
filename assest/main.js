@@ -1,5 +1,5 @@
  // swiper slider
-const swiper = new Swiper('.swiper', {
+const swiper2 = new Swiper('.swiper', {
     slidesPerView: 3,
   spaceBetween: 5,
   loop: true,
@@ -43,5 +43,18 @@ const swiper = new Swiper('.swiper', {
      videoElement.play();
  });
 
+  // Initialize Swiper 1
+const swiper1 = new Swiper('.slider-1', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination-1',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next-1',
+      prevEl: '.swiper-button-prev-1',
+    },
+  });
 
   

@@ -1,3 +1,72 @@
+:root {
+  --archivo-fonts: "Archivo", sans-serif;
+  --roboto-fonts: "Roboto Flex", sans-serif; 
+  --font-size-30px: 30px;
+  --font-size-35px: 35px;
+  --font-size-40px: 40px;
+  --font-size-16px: 16px;
+  --font-size-20px: 20px;
+  --font-size-12px: 12px;
+  --font-weight-400: 400;
+  --font-weight-300: 300;
+  --line-height-1-56: 1.56;
+  --line-height-1-25: 1.25;
+  --line-height-1-13: 1.13;
+  --line-height-0-75: 0.75;
+  --line-height-1: 1;
+  --nav-color: #000000;
+}
+ /* fonts */  
+ .archivo {
+  font-family: "Archivo", sans-serif;
+}
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+   
+}
+
+/* fonts end*/ 
+
+p {
+  font-family: var(--roboto-fonts);
+  font-size: var(--font-size-16px);
+  font-weight: var(--font-weight-300);
+  /* color: #000; */
+  line-height: var(--line-height-1-25);
+}
+
+h1 {
+  font-family: var(--archivo-fonts);
+  font-size: var(--font-size-35px);
+  font-weight: var(--font-weight-300);
+  /* color: #000; */
+  line-height: var(--line-height-1-25);
+}
+
+.text-warning{
+  font-family: var(--roboto-fonts);
+  font-size: var(--font-size-20px);
+  font-weight: var(--font-weight-300);
+  /* color: #000; */
+  line-height: var(--line-height-1);
+}
+
+h2 {
+  font-family: var(--archivo-fonts);
+  font-size: var(--font-size-40px);
+  font-weight: var(--font-weight-300);
+  /* color: #000; */
+  line-height: var(--line-height-1-25);
+}
+
+h3 {
+  font-family: var(--archivo-fonts);
+  font-size: var(--font-size-30px);
+  font-weight: var(--font-weight-300);
+  /* color: #000; */
+  line-height: var(--line-height-1-25);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -38,19 +107,6 @@ body {
     color:  #f5f7f8;
 }
  /* footer end */  
- 
- 
- 
- /* fonts */  
-.archivo {
-    font-family: "Archivo", sans-serif;
-  }
-  .roboto-flex {
-    font-family: "Roboto Flex", sans-serif;
-     
-  }
-
-/* fonts end*/ 
 
 
 /* company profile Hover effect directly on the image container */
@@ -89,7 +145,7 @@ body {
 /* Full width and reduced height for hover image */
 .new-3-hover-content img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -248,3 +304,78 @@ body {
   .new-2-card-body.new-2-hover-content img {
       opacity: 0.7;
   }
+
+
+   
+  
+  /* side menu General card styling */
+   .new-4-card {
+    position: relative;
+  }
+
+  /* Button overlay styling */
+  .new-4-btn-read-more {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .new-4-card:hover .new-4-btn-read-more {
+    opacity: 1 ;
+  }
+
+  /* Side menu styling */
+  .new-4-side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    padding: 20px;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+  }
+
+  /* Target the side menu when linked */
+  .new-4-side-menu:target {
+    right: 0;
+  }
+
+  /* Close button styling */
+  .new-4-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar-expand-xl .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+}
+
+/* Ensure swiper buttons are visible on small screens */
+.swiper-button-next, .swiper-button-prev {
+  z-index: 10; /* Increase z-index */
+  position: absolute; /* Position within the Swiper container */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust to center */
+}
+
+/* Optional: Customize button visibility on different screens */
+@media (max-width: 576px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: block; /* Ensure they display on small devices */
+    width: 30px; /* Adjust size for mobile */
+    height: 30px;
+  }
+}

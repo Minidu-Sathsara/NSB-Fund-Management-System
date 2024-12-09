@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Star Rating</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for star icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+      <div class="col-10 d-flex align-items-center">
+          <!-- Left Aligned Text -->
+          <span>This job has been completed by Hannah James, please add your rating</span>
+      </div>
+      <div class="col-2 text-right">
+          <!-- Right Aligned Button -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ratingModal">
+              Rate Satisfaction
+          </button>
+      </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div class="modal fade" id="ratingModal" tabindex="-1" role="dialog" aria-labelledby="ratingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ratingModalLabel">Rate this action</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <!-- Rating Items -->
+                    <!-- We set a fixed width for the labels and use flexbox to ensure the stars and rating align -->
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <label class="mr-3" style="width: 150px;">Prompt Action</label>
+                        <div class="d-flex justify-content-center flex-fill">
+                            <span class="far fa-star  ml-3" data-value="1" style="cursor:pointer; color: gray; "></span>
+                            <span class="far fa-star  ml-4" data-value="2" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="3" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="4" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="5" style="cursor:pointer; color: gray;"></span>
+                        </div>
+                        <span class="badge badge-primary ml-5 rating-value">0.0</span>
+                    </div>
+                    
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <label class="mr-3" style="width: 150px;">Duration</label>
+                        <div class="d-flex justify-content-end flex-fill">
+                            <span class="far fa-star  ml-3" data-value="1" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="2" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="3" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="4" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="5" style="cursor:pointer; color: gray;"></span>
+                        </div>
+                        <span class="badge badge-primary ml-5 rating-value">0.0</span>
+                    </div>
+                    
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <label class="mr-3" style="width: 150px;">Satisfactory Level</label>
+                        <div class="d-flex justify-content-end flex-fill">
+                            <span class="far fa-star  ml-3" data-value="1" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="2" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="3" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="4" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="5" style="cursor:pointer; color: gray;"></span>
+                        </div>
+                        <span class="badge badge-primary ml-5 rating-value">0.0</span>
+                    </div>
+                    
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <label class="mr-3" style="width: 150px;">Performance</label>
+                        <div class="d-flex justify-content-end flex-fill">
+                            <span class="far fa-star  ml-3" data-value="1" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star ml-4" data-value="2" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="3" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="4" style="cursor:pointer; color: gray;"></span>
+                            <span class="far fa-star  ml-4" data-value="5" style="cursor:pointer; color: gray;"></span>
+                        </div>
+                        <span class="badge badge-primary ml-5 rating-value">0.0</span>
+                    </div>
+
+                    <!-- Additional Comments -->
+                    <div class="form-group">
+                        <label for="additional-comments">Additional Comments</label>
+                        <textarea class="form-control" id="additional-comments" rows="3" placeholder="Enter your comments"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-success btn-block">Rate Action</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript for Star Rating Interaction -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all the stars on the page
+        const stars = document.querySelectorAll('.fa-star');
+        
+        // Iterate over each star
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const ratingValue = this.getAttribute('data-value');  // Get the clicked star's value
+                const parentContainer = this.closest('.form-group');  // Get the parent rating container
+                
+                updateStars(parentContainer, ratingValue);  // Update star colors
+                parentContainer.querySelector('.rating-value').textContent = parseFloat(ratingValue).toFixed(1);  // Update displayed rating
+            });
+        });
+
+        function updateStars(parent, rating) {
+            const allStars = parent.querySelectorAll('.fa-star');
+            allStars.forEach(star => {
+                const starValue = parseInt(star.getAttribute('data-value'));
+                if (starValue <= rating) {
+                    star.classList.remove('far');
+                    star.classList.add('fas');
+                    star.style.color = "gold";  // Set star color to gold
+                } else {
+                    star.classList.remove('fas');
+                    star.classList.add('far');
+                    star.style.color = "gray";  // Set star color to gray
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

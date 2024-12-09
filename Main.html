@@ -20,125 +20,144 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assest/style.css">
+    <link rel="stylesheet" href="/assest/style-md.css">
+    <link rel="stylesheet" href="/assest/style-lg.css">
+    <link rel="stylesheet" href="/assest/style-sm.css">
 </head>
 <body> 
 
   <!-- navbar -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 top-0 start-0">
-    <div class="container-fluid py-3">
-      <a class="navbar-brand px-3" href="#">
-        <img src="/assest/images/Group 42.png" alt="NSB Logo" style="height: 25px;">
-     </a>
+  <div class="container-fluid py-3 px-4 ">
+    <div class="row w-100">
+      <!-- Brand and CMS Icon -->
+      <div class="col-3 col-lg-1 d-flex align-items-center justify-content-end mx-0 px-0">
+        <a class="navbar-brand " href="#">
+          <img src="/assest/images/Group 42.png" alt="NSB Logo" style="height: 25px;">
+        </a>
+      </div>
+      
+
+      <!-- CMS Icon on Small Screens Only -->
+      <div class="col-3 d-lg-none d-flex justify-content-end align-items-center ">
+        <a class="nav-link text-white" href="#" style="position: absolute; right: 100px;">
+          CMS
+          <img src="/assest/images/user-line 1.svg" alt="CMS Icon" style="height: 20px;">
+        </a>
+      </div>
+
+      <!-- Toggler for Mobile Screens -->
+      <div class="col-6 col-lg-8 text-end d-lg-none px-0">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Our Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Customer Charter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Market Rate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Company Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Financial Statement</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Right to Information Act</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Download</a>
-                </li>
-                <!-- FAQ Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        FAQ
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">General Questions</a></li>
-                        <li><a class="dropdown-item" href="#">Investment Queries</a></li>
-                        <li><a class="dropdown-item" href="#">Account Management</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#">EN</a>
-          </li>
-                        <!--<li class="nav-item">
-                    <select class="language-select">
-                    <option value="en">EN</option>
-                      <option value="es">ES</option>
-                     <option value="fr">FR</option>
-                     Add more language options as needed -->
-        
-             
-           
+      </div>
+
+      <!-- Navbar Menu -->
+      <div class="col-lg-10 collapse navbar-collapse px-0" id="navbarNav">
+        <div class="row w-100">
+          <!-- Left-aligned Navbar Items -->
+          <div class="col-lg-9 px-0 align-items-center d-flex">
+            <ul class="navbar-nav" style="font-size: 12px;">
               <li class="nav-item">
-                  <a class="nav-link" href="#">CMS 
-                    <img src="/assest/images/user-line 1.svg" alt="CMS Icon" style="height: 20px;">
-                 </svg> 
-                  </a>
-                  </li>
-                  
-                
-                  <button class="btn btn-warning ms-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">Contact Us ↗</button>
-                
-            </ul>  
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customer Charter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Market Rate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Company Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Financial Statement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Right to Information Act</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">FAQ</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">General Questions</a></li>
+                  <li><a class="dropdown-item" href="#">Investment Queries</a></li>
+                  <li><a class="dropdown-item" href="#">Account Management</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right-aligned Navbar Items -->
+          <div class="col-lg-3 d-flex align-items-center  justify-content-lg-end mx-0 px-0 ">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">EN</a>
+              </li>
+              <!-- CMS Icon (Visible on Larger Screens) -->
+              <li class="nav-item d-none d-lg-flex align-items-center">
+                <a class="nav-link" href="#">
+                  CMS
+                  <img src="/assest/images/user-line 1.svg" alt="CMS Icon" style="height: 20px;">
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-warning ms-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">Contact Us ↗</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    
+  </div>
 </nav>
-<!-- navbar end -->
+
+<!-- Navbar end -->
+
 
 <!-- Hero Section -->
-
-  <div class="d-flex flex-column justify-content-center align-items-start text-white " style="background-image: url('/assest/images/Mask\ group.png'); background-size: cover; background-position: center; height: 100vh;">
-    <div class="row w-100 m-0 px-5">
-        <div class="col-md-12 px-5  ">
-          <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 60px;">
-           Invest wisely, secure your future with
-           <br> 
-           NSB Fund Management's expertise.
-           </h1>
-            <p class="m-0 mt-5 "style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
-              Investing with NSB Fund Management means securing your financial future
-              <br>
-              with trusted expertise and tailored strategies for growth and stability. 
-            </p>
-           
-            
-            <button class="btn btn-secondary btn-light btn-lg rounded-pill mt-5 ">4.8 Stars , 1900+Reviews</button>
-        </div>
+<div class=" hreo-section d-flex flex-column justify-content-center align-items-start text-white" style="background-image: url('/assest/images/Mask group.png'); background-size: cover; background-position: center; min-height: 100vh;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10 col-lg-10  text-lg-start">
+        <h1 class="display-4" >
+          Invest wisely, secure your future with
+          <br>
+          NSB Fund Management's expertise.
+        </h1>
+        <p class="mt-4" >
+          Investing with NSB Fund Management means securing your financial future
+          <br>
+          with trusted expertise and tailored strategies for growth and stability.
+        </p>
+        <button class="btn btn-light btn-lg rounded-pill mt-5">4.8 Stars, 1900+ Reviews</button>
+      </div>
     </div>
+  </div>
 </div>
-<!-- Hero Section end-->
+<!-- Hero Section  end-->
 
 <!-- Section 01 -->
 <section class="investment-section">
   <div class="container ">
  <!-- Who We Are-->
          
- <section class="text-center py-5 ">
-  <div class="container text-center  px-5">
+ <section class="sec-1-text text-center py-5 ">
+  <div class="sec-1-text container text-center  px-5">
                  <div class="text-warning ">Who We Are</div>
-                 <h1 class="m-0 mt-3"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+                 <h1 class="m-0 mt-3">
                   Invest wisely, secure your future with NSB Fund
                   <br>
                   Management's expertise.
                  </h1>
-                 <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                 <p class="m-0 mt-3">
                   Investing with NSB Fund Management means securing your financial future
                   <br>
                   with trusted expertise and tailored strategies for growth and stability.
@@ -167,13 +186,13 @@
           <div class="tab-pane fade show active" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
               <div class="row align-items-center">
                   <div class="col-md-6 p-5 mb-4">
-                      <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">Financial statements reveal 
+                      <h1 class="m-0">Financial statements reveal 
                         <br>
                         NSB Fund Management's 
                         <br>
                         fiscal health.
                       </h1>
-                      <p class="text-muted mt-4"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                      <p class="text-muted mt-4">
                         Creating a financial statement for NSB Fund Management 
                         <br>
                         involves presenting a clear and comprehensive overview of 
@@ -194,13 +213,13 @@
           <div class="tab-pane fade" id="pills-interim" role="tabpanel" aria-labelledby="pills-interim-tab">
             <div class="row align-items-center">
               <div class="col-md-6 p-5 mb-4">
-                  <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">Financial statements reveal 
+                  <h1 class="m-0">Financial statements reveal 
                     <br>
                     NSB Fund Management's 
                     <br>
                     fiscal health.
                   </h1>
-                  <p class="text-muted mt-4"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                  <p class="text-muted mt-4">
                     Creating a financial statement for NSB Fund Management 
                     <br>
                     involves presenting a clear and comprehensive overview of 
@@ -227,13 +246,13 @@
   <section class="text-center py-5 bg-light">
     <div class="container text-center  px-5">
            <div class="text-warning ">Our Services</div>
-           <h1 class="m-0 mt-3"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+           <h1 class="m-0 mt-3">
             Expert fund management ensuring
             <br> 
             growth and security
            </h1>
          
-          <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+          <p class="m-0 mt-3">
             NSB Fund Management offers expert investment strategies, personalized financial
             <br>
             planning and portfolio management
@@ -255,12 +274,12 @@
           <div class="swiper-wrapper">
               <!-- Card 1 -->
               <div class="swiper-slide">
-                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 22.813rem; height: 28.25rem;">
                       <!-- Default content -->
                       <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
                           <div>
-                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
-                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                              <h3 class="mt-4">Treasury Bonds</h3>
+                              <p class="" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           </div>
                           <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
                       </div>
@@ -268,8 +287,8 @@
                       <!-- Hover content -->
                       <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
                           <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
-                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
-                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <h3 class="mt-4 px-3" >Treasury Bonds</h3>
+                          <p class="px-3" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           <!-- First Button -->
                           <button class="btn mb-2">Read More ↗</button>
                           <!-- Second Button: Positioned on hover image -->
@@ -280,12 +299,12 @@
   
               <!-- Card 2 -->
               <div class="swiper-slide">
-                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 22.813rem; height: 28.25rem;">
                       <!-- Default content -->
                       <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
                           <div>
-                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
-                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                              <h3 class="mt-4">Treasury Bonds</h3>
+                              <p class="" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           </div>
                           <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
                       </div>
@@ -293,8 +312,8 @@
                       <!-- Hover content -->
                       <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
                           <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
-                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
-                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <h3 class="mt-4 px-3" >Treasury Bonds</h3>
+                          <p class="px-3" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           <!-- First Button -->
                           <button class="btn mb-2">Read More ↗</button>
                           <!-- Second Button: Positioned on hover image -->
@@ -305,12 +324,12 @@
   
               <!-- Card 3 -->
               <div class="swiper-slide">
-                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 22.813rem; height: 28.25rem;">
                       <!-- Default content -->
                       <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
                           <div>
-                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
-                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                              <h3 class="mt-4">Treasury Bonds</h3>
+                              <p class="" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           </div>
                           <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
                       </div>
@@ -318,8 +337,8 @@
                       <!-- Hover content -->
                       <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
                           <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
-                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
-                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <h3 class="mt-4 px-3" >Treasury Bonds</h3>
+                          <p class="px-3">NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           <!-- First Button -->
                           <button class="btn mb-2">Read More ↗</button>
                           <!-- Second Button: Positioned on hover image -->
@@ -330,12 +349,12 @@
   
               <!-- Card 4 -->
               <div class="swiper-slide">
-                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 22.813rem; height: 28.25rem;">
                       <!-- Default content -->
                       <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
                           <div>
-                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
-                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                              <h3 class="mt-4" >Treasury Bonds</h3>
+                              <p class="" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           </div>
                           <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
                       </div>
@@ -343,8 +362,8 @@
                       <!-- Hover content -->
                       <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
                           <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
-                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
-                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <h3 class="mt-4 px-3" >Treasury Bonds</h3>
+                          <p class="px-3" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           <!-- First Button -->
                           <button class="btn mb-2">Read More ↗</button>
                           <!-- Second Button: Positioned on hover image -->
@@ -355,12 +374,12 @@
   
               <!-- Card 5 -->
               <div class="swiper-slide">
-                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 22.813rem; height: 28.25rem;">
                       <!-- Default content -->
                       <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
                           <div>
-                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
-                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                              <h3 class="mt-4" >Treasury Bonds</h3>
+                              <p class="" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           </div>
                           <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
                       </div>
@@ -368,8 +387,8 @@
                       <!-- Hover content -->
                       <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
                           <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
-                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
-                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <h3 class="mt-4 px-3" >Treasury Bonds</h3>
+                          <p class="px-3" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           <!-- First Button -->
                           <button class="btn mb-2">Read More ↗</button>
                           <!-- Second Button: Positioned on hover image -->
@@ -380,12 +399,12 @@
   
               <!-- Card 6 -->
               <div class="swiper-slide">
-                  <div class="new-3-card border rounded shadow-sm" style="width: 20rem; height: 25.25rem;">
+                  <div class="new-3-card border rounded shadow-sm" style="width: 22.813rem; height: 28.25rem;">
                       <!-- Default content -->
                       <div class="new-3-card-body default-content h-100 px-3 d-flex flex-column justify-content-between">
                           <div>
-                              <h2 class="mt-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h2>
-                              <p class="" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                              <h3 class="mt-4" >Treasury Bonds</h3>
+                              <p class="" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           </div>
                           <img src="/assest/images/our-service img-1.png" class="img-fluid new-3-same-size-img mt-3" alt="Businessmen">
                       </div>
@@ -393,8 +412,8 @@
                       <!-- Hover content -->
                       <div class="new-3-card-body new-3-hover-content position-absolute top-0 start-0 w-100 h-100">
                           <img src="/assest/images/our-service img-1.png" class="img-fluid" alt="New Investment">
-                          <h5 class="mt-4 px-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Treasury Bonds</h5>
-                          <p class="px-3" style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">NSB Fund Management specializes in secure Treasury Bill investments.</p>
+                          <h3 class="mt-4 px-3" >Treasury Bonds</h3>
+                          <p class="px-3" >NSB Fund Management specializes in secure Treasury Bill investments.</p>
                           <!-- First Button -->
                           <button class="btn mb-2">Read More ↗</button>
                           <!-- Second Button: Positioned on hover image -->
@@ -417,7 +436,7 @@
    <section class="bg-light py-5">
    <div class="container text-center ">
           <div class="text-warning ">Our Mission</div>
-          <h1 class="m-0 mt-3"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+          <h1 class="m-0 mt-3">
             The mission of NSB Fund Management is to deliver superior financial 
             <br>
             outcomes through innovative investment strategies, personalized
@@ -460,14 +479,14 @@
         <!-- Text Section -->
             <div class="col-12 ">
                 <h6 class="text-warning mb-2 py-4">History of Our Company</h6>
-                <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+                <h1 class="m-0">
                   NSB Fund Management, established in 1990, began as a small
                   <br>
                   boutique investment firm focused on providing personalized
                   <br>
                   financial services.
                  </h1>
-                  <p class="m-0 mt-5"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+                  <p class="m-0 mt-5">
                     Over the years, it has grown into a leading fund management company, renowned for its expertise in portfolio
                     <br>
                     management, innovative investment strategies, and commitment to client satisfaction. With a strong foundation
@@ -486,33 +505,32 @@
  <section class="text-center py-5 bg-light">
     <div class="container">
     </h1>
-    <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+    <h1 class="m-0">
       NSB Fund Management offers competitive market rates
       <br>
       across diverse investment portfolios
     </h1>
-  <p class="mt-2"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">Savings account offering an annual percentage yield (APY) of 0.50%.</p>
+  <p class="mt-2">Savings account offering an annual percentage yield (APY) of 0.50%.</p>
       <a href="#" class="mt-3 btn btn-outline-warning">Market Rate ↗</a>
     </div>
   </section>
 
 <!-- Portfolio Information with white background -->
-  <section class="py-3 bg-light">
+<section class="py-3 bg-light">
     <div class="container">
-      <div class="bg-white  shadow-sm">
-        <div class="row ">
-          <div class=" col-6 px-5">
-           <div class="mb-0 mt-5 ">Our Portfolio</div>
-           <h1 class=" mt-5"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
-            NSB Fund Management:
-            <br> 
-            Leading provider of bespoke
-            <br>
-            financial solutions
-           </h1>
-         
-          <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
-            NSB Fund Management is a distinguished firm specializing
+      <div class="bg-white shadow-sm">
+        <div class="row">
+          <div class="col-md-6 px-5 d-flex flex-column justify-content-center">
+            <div class="mb-0 mt-5">Our Portfolio</div>
+            <h1 class="mt-5" >
+              NSB Fund Management:
+              <br>
+              Leading provider of bespoke
+              <br>
+              financial solutions
+            </h1>
+            <p class="mt-3" >
+              NSB Fund Management is a distinguished firm specializing
             <br>
             in comprehensive investment management services.
             <br>
@@ -526,26 +544,26 @@
             <br>
             our clients.
           </p>
-          <a href="#" class="btn btn-outline-warning mt-5">Read More &rarr;</a>
-        </div>
-          <div class="col-md-6 ">
-            <img src="assest/images/photofolio.png" alt="Team discussion" class="w-100">
+            <a href="#" class="btn btn-outline-warning mt-5 mb-5"style="width: 154px; height: 45px;">Read More ↗</a> 
+          </div>
+          <div class="col-md-6">
+            <img src="assest/images/photofolio.png" alt="Team discussion" class="w-100 h-100 img-fluid ">
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
 <!--  Right to Information Act -->
 <section class="bg-light py-5">
   <div class="container text-center ">
          <div class="text-warning mb-4 "> Right To Information Act</div>
-      <h1 class="m-0"style="font-family: 'Archivo', sans-serif; font-size: 35px;">
+      <h1 class="m-0">
         NSB Fund Management adheres to
         <br>
         regulations under Right to Information.
        </h1>
-       <p class="m-0 mt-3"style="font-family: 'Roboto Flex', sans-serif; font-size: 16px;">
+       <p class="m-0 mt-3">
         NSB Fund Management adheres to the principles of transparency and accountability
         <br>
         under the Right to Information Act, ensuring access to information and promoting public
@@ -557,133 +575,273 @@
   </section>
 <!-- section 05 end-->
 
-
 <!-- Section 06 -->
- <section class="py-5">
+<section class="py-5">
   <div class="container mt-5">
 
-    <!-- First Row -->
-    <div class="row row-cols-1 row-cols-md-3 g-5">
+    <!-- Slider for First Four Cards (Small Devices Only) -->
+    <div id="cardCarousel" class="carousel slide d-sm-block d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- Card 1 -->
+        <div class="carousel-item active">
+          <div class="col-sm-12">
+            <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+              <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+                <!-- Original Content -->
+                <div class="original-content h-100 d-flex flex-column justify-content-between">
+                  <h3 class="card-title mt-3 px-md-4 px-sm-2" >
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                    <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+                  </a>
+                </div>
+                <!-- Hover Content -->
+                <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+                  <h3 class="card-title mt-3" >
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                    <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Card 2 -->
+        <div class="carousel-item">
+          <div class="col-sm-12">
+            <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+              <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+                <div class="original-content h-100 d-flex flex-column justify-content-between">
+                  <h3 class="card-title mt-3 px-md-4 px-sm-2" >
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                    <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+                  </a>
+                </div>
+                <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+                  <h3 class="card-title mt-3" >
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                    <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="carousel-item">
+          <div class="col-sm-12">
+            <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+              <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+                <div class="original-content h-100 d-flex flex-column justify-content-between">
+                  <h3 class="card-title mt-3 px-md-4 px-sm-2" >
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                    <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+                  </a>
+                </div>
+                <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+                  <h3 class="card-title mt-3">
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                    <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="carousel-item">
+          <div class="col-sm-12">
+            <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+              <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+                <div class="original-content h-100 d-flex flex-column justify-content-between">
+                  <h3 class="card-title mt-3 px-md-4 px-sm-2" >
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                    <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+                  </a>
+                </div>
+                <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+                  <h3 class="card-title mt-3" >
+                    Customer Charter <br>English
+                  </h3>
+                  <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                    <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev" >
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"style="background-color: black;"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Original Layout for First Four Cards (Medium and Larger Devices) -->
+    <div class="row row-cols-1 row-cols-md-3 g-5 d-none d-md-flex">
       <!-- Card 1 -->
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-4">
         <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
           <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
-
             <!-- Original Content -->
             <div class="original-content h-100 d-flex flex-column justify-content-between">
-              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-              <br>English</h2>
+              <h3 class="card-title mt-3 px-md-4 px-sm-2" >
+                Customer Charter <br>English
+              </h3>
               <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
-                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
               </a>
             </div>
 
             <!-- Hover Content -->
             <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
-              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-                  <br>English</h2>
-                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
-                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
+              <h3 class="card-title mt-3" >
+                Customer Charter <br>English
+              </h3>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
               </a>
             </div>
-
           </div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-4">
         <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
           <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
-
             <!-- Original Content -->
             <div class="original-content h-100 d-flex flex-column justify-content-between">
-              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-              <br>English</h2>
+              <h3 class="card-title mt-3 px-md-4 px-sm-2" >
+                Customer Charter <br>English
+              </h3>
               <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
-                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
               </a>
             </div>
 
             <!-- Hover Content -->
             <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
-              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-                  <br>English</h2>
-                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
-                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
+              <h3 class="card-title mt-3" >
+                Customer Charter <br>English
+              </h3>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
               </a>
             </div>
-
           </div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-4">
         <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
           <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
-
             <!-- Original Content -->
             <div class="original-content h-100 d-flex flex-column justify-content-between">
-              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-              <br>English</h2>
+              <h3 class="card-title mt-3 px-md-4 px-sm-2" >
+                Customer Charter <br>English
+              </h3>
               <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
-                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
               </a>
             </div>
 
             <!-- Hover Content -->
             <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
-              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-                  <br>English</h2>
-                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
-                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
+              <h3 class="card-title mt-3" >
+                Customer Charter <br>English
+              </h3>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-sm-12 col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+            <!-- Original Content -->
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-md-4 px-sm-2" >
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
               </a>
             </div>
 
+            <!-- Hover Content -->
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" >
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+              </a>
+            </div>
           </div>
+        </div>
+      </div>
+      
+    <div class="col-md-8">
+      <div class="sec-6-card-5 bg-warning position-relative" style="height: 23.5rem;">
+        <div class="px-5">
+          <h2 class="py-5 px-md-4 px-sm-2">
+            Investment rate for a bank could be a <br>
+            savings account offering an annual <br>
+            percentage yield (APY) of 0.50%.
+          </h2>
+          <p class="px-md-4 px-sm-2 mb-5">
+            The investment rate, indicating the percentage return on an investment, soared to an
+            <br>
+            impressive 12% this quarter. As they say, "Success takes off when preparation meets
+            <br>
+            opportunity."
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Second Row -->
-    <div class="row row-cols-3 row-cols-md-3 g-5 mt-2">
-      <div class="col-md-4">
-        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
-          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
-
-            <!-- Original Content -->
-            <div class="original-content h-100 d-flex flex-column justify-content-between">
-              <h2 class="card-title mt-3 px-4" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-              <br>English</h2>
-              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
-                <img src="/assest/images/invesment-button.png" alt="Image"style="width: 270px; height: 50px;">
-              </a>
-            </div>
-
-            <!-- Hover Content -->
-            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
-              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">Customer Charter 
-                  <br>English</h2>
-                  <a href="#" class="btn  mb-3"style="width: 150px; height: 50px;">
-                  <img src="/assest/images/read-more-button.png" alt="Image"style="width: 150px; height: 50px;">
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-8">
-        <div class="custom-card bg-warning position-relative " style="height: 23.5rem;">
-          <div class="px-5">
-            <h2 class="py-5 px-4" style="font-family: 'Archivo', sans-serif;font-size: 40px;">
+    <!-- Fifth Card Displayed Separately on Small Devices Only -->
+    <div class="row d-sm-block d-md-none mt-2">
+      <div class="col-sm-12">
+        <div class="sec-6-card-5 bg-warning position-relative" style="height: 23.5rem;">
+            <h2 class="py-5 px-md-4 px-sm-2" >
               Investment rate for a bank could be a <br>
               savings account offering an annual <br>
               percentage yield (APY) of 0.50%.
             </h2>
-            <p class="px-4 mb-5" style="font-family: 'Roboto Flex', sans-serif;font-size: 16px;">
+            <p class="px-md-4 px-sm-2 mb-5" >
               The investment rate, indicating the percentage return on an investment, soared to an
               <br>
               impressive 12% this quarter. As they say, "Success takes off when preparation meets
@@ -691,25 +849,166 @@
               opportunity."
             </p>
           </div>
-       </div>
         </div>
       </div>
 
+    
   </div>
 </section>
+
+
+
+<!-- <section class="py-5">
+  <div class="container mt-5">
+
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+
+    
+      <div class="col-sm-12 col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+          
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-md-4 px-sm-2" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+         
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-sm-12 col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+         
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-md-4 px-sm-2" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+  
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-sm-12 col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+        
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-md-4 px-sm-2" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+      
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-2 g-5 mt-2">
+      <div class="col-sm-12 col-md-4">
+        <div class="card shadow-sm position-relative new-1-card-body border-0 h-100 bg-light mx-auto">
+          <div class="new-1-card-body h-100 d-flex flex-column justify-content-between" style="min-height: 22.813rem;">
+         
+            <div class="original-content h-100 d-flex flex-column justify-content-between">
+              <h2 class="card-title mt-3 px-md-4 px-sm-2" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn btn-secondary btn-light btn-lg rounded-pill mb-3">
+                <img src="/assest/images/invesment-button.png" alt="Image" style="width: 270px; height: 50px;">
+              </a>
+            </div>
+
+    
+            <div class="card-body-hover h-100 d-flex flex-column justify-content-between px-5">
+              <h2 class="card-title mt-3" style="font-family: 'Archivo', sans-serif; font-size: 30px;">
+                Customer Charter <br>English
+              </h2>
+              <a href="#" class="btn mb-3" style="width: 150px; height: 50px;">
+                <img src="/assest/images/read-more-button.png" alt="Image" style="width: 150px; height: 50px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-8">
+        <div class="sec-6-card-5  bg-warning position-relative" style="height: 23.5rem;">
+          <div class="px-5">
+            <h2 class="py-5 px-md-4 px-sm-2 " style="font-family: 'Archivo', sans-serif;font-size: 40px;">
+              Investment rate for a bank could be a <br>
+              savings account offering an annual <br>
+              percentage yield (APY) of 0.50%.
+            </h2>
+            <p class="px-md-4 px-sm-2 mb-5" style="font-family: 'Roboto Flex', sans-serif;font-size: 16px;">
+              The investment rate, indicating the percentage return on an investment, soared to an
+              <br>
+              impressive 12% this quarter. As they say, "Success takes off when preparation meets
+              <br>
+              opportunity."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
  <!-- Section 06 end--> 
 
 
  <!-- FOOTER Section -->
-<footer class="footer" style="background-color: #45474b; color: #fff;">
-  <div class="container py-5">
+<footer class="footer py-5" style="background-color: #45474b; color: #fff;">
+  <div class="container footer-sec">
       <div class="row footer-content mt-4 justify-content-between">
           <!-- Logo Section -->
           <div class="align-content-between col-lg-5 d-grid footer-section">
             <div class="footer-logo">
               <img src="/assest/images/Group 42.png" alt="NSB Logo" style="height: 40px;">
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 d-none d-md-flex">
                 <a href="https://example.com">
                 <button type="button" class="footer-contact">Contact Us ↗</button>
            
@@ -752,6 +1051,14 @@
               </div>
           </div>
       </div>
+  </div>
+
+  <div class="col-md-10 d-sm-block d-md-none  footer-sec-button-sm ">
+    <a href="https://example.com">
+    <button type="button" class="footer-contact">Contact Us ↗</button>
+
+    
+  </a>
   </div>
 
   <!-- Footer Bottom Line -->
