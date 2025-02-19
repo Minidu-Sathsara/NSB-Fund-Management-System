@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Interface</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .group-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .group-card {
+            background-color: #333;
+            border: 1px solid #444;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .group-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        .group-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .group-details {
+            flex-grow: 1;
+        }
+        .btn-join {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+        }
+        .btn-join:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="group-container">
+    <h4 class="text-center mb-4">Group</h4>
+    <div class="search-bar">
+        <input type="text" class="form-control" placeholder="Search Group">
+    </div>
+
+    <h5 class="mb-3">All Groups</h5>
+
+    <div class="group-card">
+        <div class="group-image">
+            <img src="https://via.placeholder.com/60" alt="Group Image">
+        </div>
+        <div class="group-details">
+            <h6 class="mb-0">nb</h6>
+            <small>Public · 2 Members</small>
+        </div>
+        <button class="btn btn-join">Join</button>
+    </div>
+
+    <div class="group-card">
+        <div class="group-image">
+            <img src="https://via.placeholder.com/60" alt="Group Image">
+        </div>
+        <div class="group-details">
+            <h6 class="mb-0">test</h6>
+            <small>Public · 5 Members</small>
+        </div>
+        <button class="btn btn-join">Join</button>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

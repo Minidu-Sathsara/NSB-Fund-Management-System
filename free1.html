@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translate with Flags</title>
+
+    <!-- Styles for Flag Layout -->
+    <style>
+        /* Circle Container */
+        .circle-container {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            right: 2%;
+        }
+
+        /* World Image */
+        .world-image {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Earth_Icon.svg/512px-Earth_Icon.svg.png') no-repeat center/cover;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        /* Flag Styles */
+        .flag {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .flag:hover {
+            transform: scale(1.1);
+        }
+
+        /* Flag Positions */
+        .flag:nth-child(2) { top: 10%; left: 50%; transform: translate(-50%, 0); } /* Top */
+        .flag:nth-child(3) { top: 20%; left: 80%; transform: translate(-50%, 0); } /* Top-Right */
+        .flag:nth-child(4) { top: 50%; left: 90%; transform: translate(-50%, -50%); } /* Right */
+        .flag:nth-child(5) { top: 70%; left: 80%; transform: translate(-50%, 0); } /* Bottom-Right */
+        .flag:nth-child(6) { top: 90%; left: 50%; transform: translate(-50%, -100%); } /* Bottom */
+        .flag:nth-child(7) { top: 60%; left: 20%; transform: translate(-50%, 0); } /* Bottom-Left */
+        .flag:nth-child(8) { top: 50%; left: 10%; transform: translate(-50%, -50%); } /* Left */
+        .flag:nth-child(9) { top: 20%; left: 20%; transform: translate(-50%, 0); } /* Top-Left */
+    </style>
+</head>
+
+<body>
+    <!-- Circle Layout Container -->
+    <div class="circle-container">
+        <div class="world-image"></div>
+
+        <!-- Flags for Languages -->
+        <img class="flag" src="https://flagcdn.com/w80/gb.png" onclick="translatePage('en')" title="English">
+        <img class="flag" src="https://flagcdn.com/w80/es.png" onclick="translatePage('es')" title="Spanish">
+        <img class="flag" src="https://flagcdn.com/w80/de.png" onclick="translatePage('de')" title="German">
+        <img class="flag" src="https://flagcdn.com/w80/it.png" onclick="translatePage('it')" title="Italian">
+        <img class="flag" src="https://flagcdn.com/w80/ru.png" onclick="translatePage('ru')" title="Russian">
+        <img class="flag" src="https://flagcdn.com/w80/fr.png" onclick="translatePage('fr')" title="French">
+        <img class="flag" src="https://flagcdn.com/w80/cn.png" onclick="translatePage('zh-CN')" title="Chinese">
+        <img class="flag" src="https://flagcdn.com/w80/br.png" onclick="translatePage('pt')" title="Portuguese">
+    </div>
+
+    <!-- Google Translate Initialization -->
+    <script>
+        // Load Google Translate Element
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+
+        // Function to Translate Page
+        function translatePage(lang) {
+            const googleTranslateUrl = `https://translate.google.com/translate?hl=${lang}&sl=auto&u=${window.location.href}`;
+            window.location.href = googleTranslateUrl;
+        }
+    </script>
+
+    <!-- Google Translate API -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Hidden Google Translate Element -->
+    <div id="google_translate_element" style="display: none;"></div>
+</body>
+</html>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
 :root {
   --archivo-fonts: "Archivo", sans-serif;
   --roboto-fonts: "Roboto Flex", sans-serif; 
@@ -14,7 +17,11 @@
   --line-height-1-13: 1.13;
   --line-height-0-75: 0.75;
   --line-height-1: 1;
-  --nav-color: #000000;
+  --bg-color:#FFFFFF;
+  --second-bg-color: #D9D9D9;
+  --Text-color:  #FDB713;
+  --button-color: #FDB713;
+  --disabled-color: #45474B;
 }
  /* fonts */  
  .archivo {
@@ -31,7 +38,6 @@ p {
   font-family: var(--roboto-fonts);
   font-size: var(--font-size-16px);
   font-weight: var(--font-weight-300);
-  /* color: #000; */
   line-height: var(--line-height-1-25);
 }
 
@@ -39,7 +45,7 @@ h1 {
   font-family: var(--archivo-fonts);
   font-size: var(--font-size-35px);
   font-weight: var(--font-weight-300);
-  /* color: #000; */
+ 
   line-height: var(--line-height-1-25);
 }
 
